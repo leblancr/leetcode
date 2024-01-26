@@ -5,4 +5,9 @@ edition = "2021"
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
+[[bin]]
+name = "running_sum_of_1d_array_1480"
+path = "src/running_sum_of_1d_array_1480.rs"
+
 [dependencies]
+
