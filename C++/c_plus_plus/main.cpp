@@ -1,14 +1,13 @@
-// SPDX-FileCopyrightText: 2024 <copyright holder> <email>
-// SPDX-License-Identifier: Apache-2.0
-
-#include "main.h"
+#include <stdio.h>
+#include <stdlib.h>
+//#include "RunningSumOf1DArray1480.h"
 #include <iostream>
 #include <vector>
 
-// 1480. Running Sum of 1D Array
-int main() {
-    std::vector<int> numbers = {3, 1, 2, 10, 1};
-    int running_sum = 1;
+int main(int argc, char *argv[])
+{
+   std::vector<int> numbers = {3, 1, 2, 10, 1};
+    int running_sum = 0;
     std::vector<int> result_list = {};
 
     // Using a range-based for loop (C++11 and later)
@@ -25,7 +24,7 @@ int main() {
     std::cout << std::endl;
 
     for (int num : result_list) {
-        cout << num << " ";
+        std::cout << num << " ";
     }
 
     std::cout << std::endl;
