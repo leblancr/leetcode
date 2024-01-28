@@ -6,8 +6,8 @@ edition = "2021"
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
 [[bin]]
-name = "richest_customer_wealth_1672"
-path = "src/richest_customer_wealth_1672.rs"
+name = "main"
+path = "src/main.rs"
 
 [dependencies]
 

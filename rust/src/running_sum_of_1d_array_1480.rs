@@ -1,6 +1,8 @@
 
-fn main() {
-    let nums = [3, 1, 2, 10, 1];
+pub fn calculate_running_sum(nums: Vec<i32>) -> Vec<i32> {
+    println!("1480. Running Sum of 1D Array:");
+    println!("nums: {:?}", nums);
+    // let nums = [3, 1, 2, 10, 1];
     let mut running_sum = 0;
     let mut result: Vec<i32> = vec!();
 
@@ -11,7 +13,6 @@ fn main() {
         result.push(running_sum);
     }
 
-    println!("{:?}", nums);
-    println!("{:?}", result);
+    result
 }
 

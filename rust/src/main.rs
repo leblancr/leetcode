@@ -1,27 +1,15 @@
-struct Solution;
-
-// using peekable iterators
-impl Solution {
-    pub fn merge_alternately(word1: String, word2: String) -> String {
-        let mut word3 = String::new();
-        let (chars1, chars2) = (word1.chars(), word2.chars());
-        let (mut iter1, mut iter2) = (chars1.peekable(), chars2.peekable());
-
-        while iter1.peek().is_some() || iter2.peek().is_some() {
-            if let Some(c1) = iter1.next() {
-                word3.push(c1);
-            }
-
-            if let Some(c2) = iter2.next() {
-                word3.push(c2);
-            }
-        }
-
-        word3
-    }
-}
+mod merge_strings_alternately_1768;
+use merge_strings_alternately_1768::Solution;
+mod running_sum_of_1d_array_1480;
+mod richest_customer_wealth_1672;
 
 fn main() {
+    println!("1480. Running Sum of 1D Array");
+    let nums = [3, 1, 2, 10, 1];
+    // Convert the array to Vec<i32> and pass it to the function
+    println!("result: {:?}", running_sum_of_1d_array_1480::calculate_running_sum(nums.to_vec()));
+
+    println!("1768. Merge Strings Alternately");
     // Example 1 - expect "apbqcr"
     println!("{}", Solution::merge_alternately("abc".to_string(), "pqr".to_string()));
 
@@ -30,5 +18,9 @@ fn main() {
 
     // Example 3 - expect "apbqcd"
     println!("{}", Solution::merge_alternately("abcd".to_string(), "pq".to_string()));
+
+    println!("1672. Richest Customer Wealth");
+    println!("Richest customer's wealth is: {:?}", richest_customer_wealth_1672::calculate_richest_customer_wealth_1672());
+
 }
 
