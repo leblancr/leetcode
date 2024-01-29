@@ -1,4 +1,6 @@
 // The main class that runs all the leetcode problems
+import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.Vector;
 import java.util.List;
 
@@ -10,11 +12,29 @@ public class Main {
         System.out.println("1480. Running Sum of 1D Array");
         Vector<Integer> numbers = new Vector<>(List.of(3, 1, 2, 10, 1));
 
-        RunningSumOf1DArray1480 solution = new RunningSumOf1DArray1480();
-        solution.calculateRunningSum(numbers);
+        RunningSumOf1DArray1480 solution1480 = new RunningSumOf1DArray1480();
+        List<Integer> result_list = solution1480.calculateRunningSum(numbers);
+        System.out.print("output: ");
+        System.out.println(result_list);
+        System.out.println();
 
         // 1672. Richest Customer Wealth
         System.out.println("1672. Richest Customer Wealth");
-        //rcw = calculate_richest_customer_wealth(accounts);
+        int rcw = getRcw();
+        System.out.printf("Richest customer's wealth is %d", rcw);
+    }
+
+    // build customer accounts
+    private static int getRcw() {
+        List<List<Integer>> accounts = new ArrayList<>();
+        List<Integer> list1 = new ArrayList<>(Arrays.asList(1, 2, 3));
+        List<Integer> list2 = new ArrayList<>(Arrays.asList(4, 5, 6));
+        List<Integer> list3 = new ArrayList<>(Arrays.asList(7, 8, 9));
+        accounts.add(list1);
+        accounts.add(list2);
+        accounts.add(list3);
+
+        RichestCustomerWealth1672 solution1672 = new RichestCustomerWealth1672();
+        return solution1672.calculateRichestCustomerWealth(accounts);
     }
 }
