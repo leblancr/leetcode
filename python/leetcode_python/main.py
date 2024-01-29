@@ -1,0 +1,7 @@
+import running_rum_of_1D_array_1480
+import fizz_buzz_412
+
+running_rum_of_1D_array_1480.calculate_running_sum()
+fizz_buzz_412.calculate_fizz_buzz()
+
+

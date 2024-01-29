@@ -9,6 +9,9 @@ fn main() {
     // Convert the array to Vec<i32> and pass it to the function
     println!("result: {:?}", running_sum_of_1d_array_1480::calculate_running_sum(nums.to_vec()));
 
+    println!("1672. Richest Customer Wealth");
+    println!("Richest customer's wealth is: {:?}", richest_customer_wealth_1672::calculate_richest_customer_wealth_1672());
+
     println!("1768. Merge Strings Alternately");
     // Example 1 - expect "apbqcr"
     println!("{}", Solution::merge_alternately("abc".to_string(), "pqr".to_string()));
@@ -19,8 +22,5 @@ fn main() {
     // Example 3 - expect "apbqcd"
     println!("{}", Solution::merge_alternately("abcd".to_string(), "pq".to_string()));
 
-    println!("1672. Richest Customer Wealth");
-    println!("Richest customer's wealth is: {:?}", richest_customer_wealth_1672::calculate_richest_customer_wealth_1672());
-
-}
+ }
 

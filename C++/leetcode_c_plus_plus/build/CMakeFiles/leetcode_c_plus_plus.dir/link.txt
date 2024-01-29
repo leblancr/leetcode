@@ -1,0 +1,1 @@
+/usr/bin/c++ -g CMakeFiles/leetcode_c_plus_plus.dir/src/main.cpp.o CMakeFiles/leetcode_c_plus_plus.dir/src/running_sum_of_1d_array_1480.cpp.o CMakeFiles/leetcode_c_plus_plus.dir/src/richest_customer_wealth_1672.cpp.o -o leetcode_c_plus_plus 

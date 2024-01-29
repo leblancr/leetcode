@@ -1,8 +1,0 @@
-[
-{
-  "directory": "/home/rich/projects/leetcode/C++/c_plus_plus/build",
-  "command": "/usr/bin/c++   -g -o CMakeFiles/c_plus_plus.dir/main.cpp.o -c /home/rich/projects/leetcode/C++/c_plus_plus/main.cpp",
-  "file": "/home/rich/projects/leetcode/C++/c_plus_plus/main.cpp",
-  "output": "CMakeFiles/c_plus_plus.dir/main.cpp.o"
-}
-]

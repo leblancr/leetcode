@@ -1,0 +1,20 @@
+[
+{
+  "directory": "/home/rich/projects/leetcode/C++/leetcode_c_plus_plus/build",
+  "command": "/usr/bin/c++   -g -o CMakeFiles/leetcode_c_plus_plus.dir/src/main.cpp.o -c /home/rich/projects/leetcode/C++/leetcode_c_plus_plus/src/main.cpp",
+  "file": "/home/rich/projects/leetcode/C++/leetcode_c_plus_plus/src/main.cpp",
+  "output": "CMakeFiles/leetcode_c_plus_plus.dir/src/main.cpp.o"
+},
+{
+  "directory": "/home/rich/projects/leetcode/C++/leetcode_c_plus_plus/build",
+  "command": "/usr/bin/c++   -g -o CMakeFiles/leetcode_c_plus_plus.dir/src/running_sum_of_1d_array_1480.cpp.o -c /home/rich/projects/leetcode/C++/leetcode_c_plus_plus/src/running_sum_of_1d_array_1480.cpp",
+  "file": "/home/rich/projects/leetcode/C++/leetcode_c_plus_plus/src/running_sum_of_1d_array_1480.cpp",
+  "output": "CMakeFiles/leetcode_c_plus_plus.dir/src/running_sum_of_1d_array_1480.cpp.o"
+},
+{
+  "directory": "/home/rich/projects/leetcode/C++/leetcode_c_plus_plus/build",
+  "command": "/usr/bin/c++   -g -o CMakeFiles/leetcode_c_plus_plus.dir/src/richest_customer_wealth_1672.cpp.o -c /home/rich/projects/leetcode/C++/leetcode_c_plus_plus/src/richest_customer_wealth_1672.cpp",
+  "file": "/home/rich/projects/leetcode/C++/leetcode_c_plus_plus/src/richest_customer_wealth_1672.cpp",
+  "output": "CMakeFiles/leetcode_c_plus_plus.dir/src/richest_customer_wealth_1672.cpp.o"
+}
+]
