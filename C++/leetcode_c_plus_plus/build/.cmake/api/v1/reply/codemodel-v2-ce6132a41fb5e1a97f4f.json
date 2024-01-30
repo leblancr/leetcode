@@ -7,7 +7,7 @@
 				{
 					"build" : ".",
 					"hasInstallRule" : true,
-					"jsonFile" : "directory-.-Debug-06d8ca3fc685c105087b.json",
+					"jsonFile" : "directory-.-Debug-62b83f92ce192c7ab0da.json",
 					"minimumCMakeVersion" : 
 					{
 						"string" : "3.15"
@@ -40,7 +40,7 @@
 				{
 					"directoryIndex" : 0,
 					"id" : "leetcode_c_plus_plus::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-leetcode_c_plus_plus-Debug-11f880e509e64ca88e1e.json",
+					"jsonFile" : "target-leetcode_c_plus_plus-Debug-3ca32d9a0258f28fefb7.json",
 					"name" : "leetcode_c_plus_plus",
 					"projectIndex" : 0
 				}

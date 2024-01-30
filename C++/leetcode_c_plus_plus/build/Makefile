@@ -174,6 +174,30 @@ leetcode_c_plus_plus/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/leetcode_c_plus_plus.dir/build.make CMakeFiles/leetcode_c_plus_plus.dir/build
 .PHONY : leetcode_c_plus_plus/fast
 
+src/fizz_buzz_412.o: src/fizz_buzz_412.cpp.o
+.PHONY : src/fizz_buzz_412.o
+
+# target to build an object file
+src/fizz_buzz_412.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/leetcode_c_plus_plus.dir/build.make CMakeFiles/leetcode_c_plus_plus.dir/src/fizz_buzz_412.cpp.o
+.PHONY : src/fizz_buzz_412.cpp.o
+
+src/fizz_buzz_412.i: src/fizz_buzz_412.cpp.i
+.PHONY : src/fizz_buzz_412.i
+
+# target to preprocess a source file
+src/fizz_buzz_412.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/leetcode_c_plus_plus.dir/build.make CMakeFiles/leetcode_c_plus_plus.dir/src/fizz_buzz_412.cpp.i
+.PHONY : src/fizz_buzz_412.cpp.i
+
+src/fizz_buzz_412.s: src/fizz_buzz_412.cpp.s
+.PHONY : src/fizz_buzz_412.s
+
+# target to generate assembly for a file
+src/fizz_buzz_412.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/leetcode_c_plus_plus.dir/build.make CMakeFiles/leetcode_c_plus_plus.dir/src/fizz_buzz_412.cpp.s
+.PHONY : src/fizz_buzz_412.cpp.s
+
 src/main.o: src/main.cpp.o
 .PHONY : src/main.o
 
@@ -259,6 +283,9 @@ help:
 	@echo "... list_install_components"
 	@echo "... rebuild_cache"
 	@echo "... leetcode_c_plus_plus"
+	@echo "... src/fizz_buzz_412.o"
+	@echo "... src/fizz_buzz_412.i"
+	@echo "... src/fizz_buzz_412.s"
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"

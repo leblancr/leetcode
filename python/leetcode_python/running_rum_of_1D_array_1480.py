@@ -1,5 +1,5 @@
-def calculate_running_sum():
-    numbers = [3, 1, 2, 10, 1]
+def calculate_running_sum(numbers):
+    # numbers = [3, 1, 2, 10, 1]
     running_sum = 0
     result = []
 
