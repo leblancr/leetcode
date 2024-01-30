@@ -4,70 +4,17 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="cd388364-6a4a-48c4-90b6-cba5b11cc713" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/groovy-4.0.14-sources.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/groovy-4.0.14.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/groovy-ant-4.0.14-sources.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/groovy-ant-4.0.14.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/groovy-astbuilder-4.0.14-sources.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/groovy-astbuilder-4.0.14.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/groovy-cli-commons-4.0.14-sources.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/groovy-cli-commons-4.0.14.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/groovy-cli-picocli-4.0.14-sources.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/groovy-cli-picocli-4.0.14.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/groovy-console-4.0.14-sources.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/groovy-console-4.0.14.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/groovy-contracts-4.0.14-sources.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/groovy-contracts-4.0.14.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/groovy-datetime-4.0.14-sources.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/groovy-datetime-4.0.14.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/groovy-dateutil-4.0.14-sources.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/groovy-dateutil-4.0.14.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/groovy-docgenerator-4.0.14-sources.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/groovy-docgenerator-4.0.14.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/groovy-ginq-4.0.14-sources.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/groovy-ginq-4.0.14.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/groovy-groovydoc-4.0.14-sources.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/groovy-groovydoc-4.0.14.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/groovy-groovysh-4.0.14-sources.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/groovy-groovysh-4.0.14.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/groovy-jmx-4.0.14-sources.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/groovy-jmx-4.0.14.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/groovy-json-4.0.14-sources.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/groovy-json-4.0.14.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/groovy-jsr223-4.0.14-sources.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/groovy-jsr223-4.0.14.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/groovy-macro-4.0.14-sources.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/groovy-macro-4.0.14.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/groovy-macro-library-4.0.14-sources.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/groovy-macro-library-4.0.14.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/groovy-nio-4.0.14-sources.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/groovy-nio-4.0.14.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/groovy-servlet-4.0.14-sources.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/groovy-servlet-4.0.14.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/groovy-sql-4.0.14-sources.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/groovy-sql-4.0.14.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/groovy-swing-4.0.14-sources.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/groovy-swing-4.0.14.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/groovy-templates-4.0.14-sources.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/groovy-templates-4.0.14.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/groovy-test-4.0.14-sources.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/groovy-test-4.0.14.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/groovy-test-junit5-4.0.14-sources.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/groovy-test-junit5-4.0.14.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/groovy-testng-4.0.14-sources.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/groovy-testng-4.0.14.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/groovy-toml-4.0.14-sources.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/groovy-toml-4.0.14.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/groovy-typecheckers-4.0.14-sources.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/groovy-typecheckers-4.0.14.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/groovy-xml-4.0.14-sources.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/groovy-xml-4.0.14.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Main.groovy" afterDir="false" />
+    <list default="true" id="4cb78788-7bad-489e-a16e-70aaa5413a47" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/groovy_4_0_14.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/leetcode_groovy.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/RunningSumOf1DArray1480.groovy" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../README.md" beforeDir="false" afterPath="$PROJECT_DIR$/../../README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main.groovy" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.groovy" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../python/leetcode_python/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/../../python/leetcode_python/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../python/leetcode_python/running_rum_of_1D_array_1480.py" beforeDir="false" afterPath="$PROJECT_DIR$/../../python/leetcode_python/running_sum_of_1D_array_1480.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -75,13 +22,15 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
   </component>
   <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 4
+  "associatedIndex": 8
 }]]></component>
-  <component name="ProjectId" id="2bbIifYgoDwiX3FUJ3OBtnMoRw7" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectId" id="2bgFCR4ObyZjuDlzur2sw6SQh3n" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -89,10 +38,18 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "Groovy.Main.executor": "Run",
+    "Groovy.RunningSumOf1DArray1480.executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "master",
-    "kotlin-language-version-configured": "true"
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "git-widget-placeholder": "main",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "/home/rich/projects/leetcode/groovy/leetcode_groovy/src",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "run.code.analysis.last.selected.profile": "pProject Default",
+    "settings.editor.selected.configurable": "preferences.lookFeel"
   }
 }]]></component>
   <component name="SharedIndexes">
@@ -105,11 +62,11 @@
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="cd388364-6a4a-48c4-90b6-cba5b11cc713" name="Changes" comment="" />
-      <created>1706477480818</created>
+      <changelist id="4cb78788-7bad-489e-a16e-70aaa5413a47" name="Changes" comment="" />
+      <created>1706628687559</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1706477480818</updated>
+      <updated>1706628687559</updated>
     </task>
     <servers />
   </component>

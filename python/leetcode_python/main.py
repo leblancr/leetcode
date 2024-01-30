@@ -1,10 +1,10 @@
-import running_rum_of_1D_array_1480
+import running_sum_of_1D_array_1480
 import richest_customer_wealth_1672
 import fizz_buzz_412
 
 print("1480. Running Sum of 1D Array")
 numbers = [3, 1, 2, 10, 1]
-result_list = running_rum_of_1D_array_1480.calculate_running_sum(numbers)
+result_list = running_sum_of_1D_array_1480.calculate_running_sum(numbers)
 print(f"result_list: {result_list}\n")
 
 print("1672. Richest Customer Wealth")
