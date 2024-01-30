@@ -9,7 +9,6 @@ class RichestCustomerWealth1672 {
         // sum each account and see who has the highest balance
         for (List<Integer> row : accounts) {
             System.out.println(row);
-            //highest_balance = std::max(highest_balance, sum);
             int sum = 0;
             for (int num : row) {
                 sum += num;

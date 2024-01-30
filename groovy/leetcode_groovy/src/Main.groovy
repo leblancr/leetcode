@@ -1,5 +1,6 @@
 import RunningSumOf1DArray1480
 import RichestCustomerWealth1672
+import fizzBuzz412
 
 static void main(String[] args) {
     println "1480. Running Sum of 1D Array"
@@ -13,6 +14,8 @@ static void main(String[] args) {
     highest_balance = RichestCustomerWealth1672.calculateRichestCustomerWealth(accounts)
     println "highest_balance: $highest_balance"
 
-
+    println "412. Fizz Buzz"
+    def fizzBuzz = new fizzBuzz412()
+    fizzBuzz.calculateFizzBuzz(16)
 }
 
