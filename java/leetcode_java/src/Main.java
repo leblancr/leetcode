@@ -11,7 +11,6 @@ public class Main {
         // 1480. Running Sum of 1D Array
         System.out.println("1480. Running Sum of 1D Array");
         Vector<Integer> numbers = new Vector<>(List.of(3, 1, 2, 10, 1));
-
         RunningSumOf1DArray1480 solution1480 = new RunningSumOf1DArray1480();
         List<Integer> result_list = solution1480.calculateRunningSum(numbers);
         System.out.print("output: ");
@@ -22,6 +21,12 @@ public class Main {
         System.out.println("1672. Richest Customer Wealth");
         int rcw = getRcw();
         System.out.printf("Richest customer's wealth is %d", rcw);
+
+        // 412. Fizz Buzz
+        System.out.println("412. Fizz Buzz");
+        int limit = 16;
+        FizzBuzz412 fizzBuzz = new FizzBuzz412();
+        fizzBuzz.calculateFizzBuzz(limit);  // go up to limit
     }
 
     // build customer accounts

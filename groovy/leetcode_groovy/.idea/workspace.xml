@@ -4,64 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4cb78788-7bad-489e-a16e-70aaa5413a47" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/fizzBuzz412.groovy" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../C++/leetcode_c++_old/.kdev4/leetcode_c++.kdev4" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../C++/leetcode_c++_old/CMakeLists.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../C++/leetcode_c++_old/RunningSumOf1DArray1480.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../C++/leetcode_c++_old/build/.cmake/api/v1/query/client-kdevelop/query.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../C++/leetcode_c++_old/build/.cmake/api/v1/reply/cmakeFiles-v1-03b9cdba2f21ed17503a.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../C++/leetcode_c++_old/build/.cmake/api/v1/reply/codemodel-v2-2099397c4bf77a8b97a6.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../C++/leetcode_c++_old/build/.cmake/api/v1/reply/directory-.-Debug-3c5bdcecefc63a0e9807.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../C++/leetcode_c++_old/build/.cmake/api/v1/reply/index-2024-01-28T23-45-39-0451.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../C++/leetcode_c++_old/build/.cmake/api/v1/reply/target-c_plus_plus-Debug-d611b696cf9d5b4b7a21.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../C++/leetcode_c++_old/build/CMakeCache.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../C++/leetcode_c++_old/build/CMakeFiles/3.27.9/CMakeCCompiler.cmake" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../C++/leetcode_c++_old/build/CMakeFiles/3.27.9/CMakeCXXCompiler.cmake" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../C++/leetcode_c++_old/build/CMakeFiles/3.27.9/CMakeDetermineCompilerABI_C.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../C++/leetcode_c++_old/build/CMakeFiles/3.27.9/CMakeDetermineCompilerABI_CXX.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../C++/leetcode_c++_old/build/CMakeFiles/3.27.9/CMakeSystem.cmake" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../C++/leetcode_c++_old/build/CMakeFiles/3.27.9/CompilerIdC/CMakeCCompilerId.c" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../C++/leetcode_c++_old/build/CMakeFiles/3.27.9/CompilerIdC/a.out" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../C++/leetcode_c++_old/build/CMakeFiles/3.27.9/CompilerIdCXX/CMakeCXXCompilerId.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../C++/leetcode_c++_old/build/CMakeFiles/3.27.9/CompilerIdCXX/a.out" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../C++/leetcode_c++_old/build/CMakeFiles/CMakeConfigureLog.yaml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../C++/leetcode_c++_old/build/CMakeFiles/CMakeDirectoryInformation.cmake" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../C++/leetcode_c++_old/build/CMakeFiles/Makefile.cmake" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../C++/leetcode_c++_old/build/CMakeFiles/Makefile2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../C++/leetcode_c++_old/build/CMakeFiles/Progress/1" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../C++/leetcode_c++_old/build/CMakeFiles/Progress/count.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../C++/leetcode_c++_old/build/CMakeFiles/TargetDirectories.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../C++/leetcode_c++_old/build/CMakeFiles/c_plus_plus.dir/DependInfo.cmake" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../C++/leetcode_c++_old/build/CMakeFiles/c_plus_plus.dir/build.make" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../C++/leetcode_c++_old/build/CMakeFiles/c_plus_plus.dir/cmake_clean.cmake" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../C++/leetcode_c++_old/build/CMakeFiles/c_plus_plus.dir/compiler_depend.internal" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../C++/leetcode_c++_old/build/CMakeFiles/c_plus_plus.dir/compiler_depend.make" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../C++/leetcode_c++_old/build/CMakeFiles/c_plus_plus.dir/compiler_depend.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../C++/leetcode_c++_old/build/CMakeFiles/c_plus_plus.dir/depend.make" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../C++/leetcode_c++_old/build/CMakeFiles/c_plus_plus.dir/flags.make" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../C++/leetcode_c++_old/build/CMakeFiles/c_plus_plus.dir/link.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../C++/leetcode_c++_old/build/CMakeFiles/c_plus_plus.dir/progress.make" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../C++/leetcode_c++_old/build/CMakeFiles/c_plus_plus.dir/src/main.cpp.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../C++/leetcode_c++_old/build/CMakeFiles/c_plus_plus.dir/src/main.cpp.o.d" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../C++/leetcode_c++_old/build/CMakeFiles/c_plus_plus.dir/src/running_sum_of_1d_array_1480.cpp.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../C++/leetcode_c++_old/build/CMakeFiles/c_plus_plus.dir/src/running_sum_of_1d_array_1480.cpp.o.d" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../C++/leetcode_c++_old/build/CMakeFiles/cmake.check_cache" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../C++/leetcode_c++_old/build/CMakeFiles/progress.marks" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../C++/leetcode_c++_old/build/Makefile" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../C++/leetcode_c++_old/build/cmake_install.cmake" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../C++/leetcode_c++_old/build/compile_commands.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../C++/leetcode_c++_old/build/install_manifest.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../C++/leetcode_c++_old/c_plus_plus.kdev4" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../C++/leetcode_c++_old/include/merge_strings_alternately_1768.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../C++/leetcode_c++_old/include/running_sum_of_1d_array_1480.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../C++/leetcode_c++_old/leetcode_c++.kdev4" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../C++/leetcode_c++_old/src/main.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../C++/leetcode_c++_old/src/merge_strings_alternately_1768.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../C++/leetcode_c++_old/src/running_sum_of_1d_array_1480.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main.groovy" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.groovy" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../java/leetcode_java/src/RichestCustomerWealth1672.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../java/leetcode_java/src/RichestCustomerWealth1672.java" afterDir="false" />
-    </list>
+    <list default="true" id="4cb78788-7bad-489e-a16e-70aaa5413a47" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
