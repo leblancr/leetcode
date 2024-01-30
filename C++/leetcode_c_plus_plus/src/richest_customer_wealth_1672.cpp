@@ -8,6 +8,7 @@ int calculate_richest_customer_wealth(std::vector<std::vector<int>> &accounts)
 {
     int highest_balance = 0;
 
+    // sum each account and see who has the highest balance
     for (const auto& row : accounts) {
         int sum = std::accumulate(row.begin(), row.end(), 0);
         std::cout << sum << std::endl;

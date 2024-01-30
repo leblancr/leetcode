@@ -1,10 +1,13 @@
 def calculate_running_sum():
-    nums = [3, 1, 2, 10, 1]
+    numbers = [3, 1, 2, 10, 1]
     running_sum = 0
     result = []
 
-    for item in nums:
-        running_sum += item
+    print("input_list: ", numbers)
+
+    for number in numbers:
+        running_sum += number
+        # print("running_sum: ", running_sum)
         result.append(running_sum)
 
-    print(result)
+    return result

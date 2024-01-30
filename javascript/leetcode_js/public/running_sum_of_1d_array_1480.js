@@ -4,7 +4,7 @@
 // sum numbers
 // add sums to result_list
 
-function process_numbers(numbers) {
+function calculate_running_sum(numbers) {
     let running_sum = 0
     let result_list = []
 
