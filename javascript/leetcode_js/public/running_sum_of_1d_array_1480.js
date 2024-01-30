@@ -23,6 +23,6 @@ function calculate_running_sum(numbers) {
 
 let numbers = [3, 1, 2, 10, 1]
 
-result_list = process_numbers(numbers)
+let result_list = calculate_running_sum(numbers)
 
 console.log("result_list: ", result_list)
