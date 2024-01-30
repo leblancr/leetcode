@@ -5,16 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4cb78788-7bad-489e-a16e-70aaa5413a47" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/groovy_4_0_14.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/leetcode_groovy.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/RunningSumOf1DArray1480.groovy" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../README.md" beforeDir="false" afterPath="$PROJECT_DIR$/../../README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/RichestCustomerWealth1672.groovy" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.groovy" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.groovy" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../python/leetcode_python/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/../../python/leetcode_python/main.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../python/leetcode_python/running_rum_of_1D_array_1480.py" beforeDir="false" afterPath="$PROJECT_DIR$/../../python/leetcode_python/running_sum_of_1D_array_1480.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
