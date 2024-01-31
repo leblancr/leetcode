@@ -3,7 +3,15 @@ import java.util.List;
 import java.util.Vector;
 
 public class RunningSumOf1DArray1480 {
-    public List<Integer> calculateRunningSum(Vector<Integer> numbers) {
+    Vector<Integer> numbers;
+
+    // Constructor method
+    public RunningSumOf1DArray1480(Vector<Integer> numbers) {
+        // Initialize instance variables
+        this.numbers = numbers;
+    }
+
+    public List<Integer> calculateRunningSum() {
         //System.out.print("1480. Running Sum of 1D Array");
 
         //int[] numbers = {3, 1, 2, 10, 1};
