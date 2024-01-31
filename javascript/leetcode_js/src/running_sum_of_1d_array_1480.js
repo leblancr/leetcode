@@ -4,7 +4,7 @@
 // sum numbers
 // add sums to result_list
 
-function calculate_running_sum(numbers) {
+export function calculate_running_sum(numbers) {
     let running_sum = 0
     let result_list = []
 
@@ -20,9 +20,3 @@ function calculate_running_sum(numbers) {
 
     return result_list
 }
-
-let numbers = [3, 1, 2, 10, 1]
-
-let result_list = calculate_running_sum(numbers)
-
-console.log("result_list: ", result_list)

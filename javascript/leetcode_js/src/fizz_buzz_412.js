@@ -2,7 +2,7 @@
 // 412. Fizz Buzz
 // mod 3 = fizz, mod 5 = buzz both = fizzbuzz none = int
 
-function calculate_fizz_buzz(limit) {
+export function calculate_fizz_buzz(limit) {
     let output = [];
 
     for (let n = 1; n < limit; n++) {
@@ -20,6 +20,3 @@ function calculate_fizz_buzz(limit) {
     return output;
 }
 
-let limit = 16
-
-console.log("output: ", calculate_fizz_buzz(limit))
