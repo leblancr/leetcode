@@ -1,16 +1,22 @@
 // RunningSumOf1DArray1480.groovy
 
 class RunningSumOf1DArray1480 {
+    def numbers
+
+    // Constructor definition
+    RunningSumOf1DArray1480(numbers) {
+        this.numbers = numbers
+    }
+
     // Define the function to calculate the running sum
     def calculateRunningSum() {
         println "input_list: " + numbers.toString()
-         runningSum = 0
-         result = []
+        def runningSum = 0
+        def result = []
 
         numbers.each { num ->
             runningSum += num
             result.add(runningSum)
         }
-        return result
     }
 }
