@@ -1,4 +1,4 @@
-class fizzBuzz412 {
+class FizzBuzz412 {
     def calculateFizzBuzz(limit) {
         def output = []
 
@@ -14,8 +14,6 @@ class fizzBuzz412 {
             }
         }
 
-        println(output)
-
         // Using list comprehension
         output = (1..limit).collect { n ->
             (n % 3 == 0 && n % 5 == 0) ? 'FizzBuzz' :  // colon like else
@@ -23,6 +21,7 @@ class fizzBuzz412 {
                             (n % 5 == 0) ? 'Buzz' :
                                     n.toString()
         }
-        println(output)
+
+        return output
     }
 }

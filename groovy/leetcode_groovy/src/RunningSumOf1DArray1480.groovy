@@ -5,18 +5,19 @@ class RunningSumOf1DArray1480 {
 
     // Constructor definition
     RunningSumOf1DArray1480(numbers) {
+        println "numbers: $numbers"
         this.numbers = numbers
     }
 
     // Define the function to calculate the running sum
     def calculateRunningSum() {
-        println "input_list: " + numbers.toString()
         def runningSum = 0
         def result = []
 
-        numbers.each { num ->
+        this.numbers.each { num ->
             runningSum += num
             result.add(runningSum)
         }
+        return result
     }
 }
