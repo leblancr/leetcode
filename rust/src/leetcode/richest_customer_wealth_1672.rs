@@ -1,4 +1,4 @@
-pub fn calculate_richest_customer_wealth_1672(accounts: Vec<Vec<i32>>) -> i32 {
+pub fn calculate_richest_customer_wealth(accounts: [[i32; 3]; 3]) -> i32 {
     let mut highest_balance = 0;
 
     // Iterate over each account
