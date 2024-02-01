@@ -3,27 +3,20 @@
 
 std::vector<int> calculate_running_sum(const std::vector<int>& numbers) {
     int running_sum = 0;
+    int count = 0;
+    int size = numbers.size();
     std::vector<int> result_list;
 
-    std::cout << "input: ";
-    // print input list
-    // sum numbers
-    // append sums to result_list
+    std::cout << "input: [";
+
+    // append sums to result_list, print input as you go
     for (int num : numbers) {
-        std::cout << num << " ";
+        std::cout << num << (++count < size ? " " : "");
         running_sum += num;
         result_list.push_back(running_sum);
     }
 
-    std::cout << std::endl;
-
-    std::cout << "output: ";
-    // print result_list
-    for (int num : result_list) {
-        std::cout << num << " ";
-    }
-
-    std::cout << std::endl;
+    std::cout << "]" << std::endl;
 
     return result_list;
 }
