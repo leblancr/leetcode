@@ -1,32 +1,29 @@
-CMakeFiles/leetcode_c_plus_plus.dir/src/main.cpp.o: \
-  /home/rich/projects/leetcode/C++/leetcode_c_plus_plus/src/main.cpp \
-  /usr/include/c++/v1/stdio.h /usr/include/c++/v1/__config \
-  /usr/include/c++/v1/__config_site /usr/include/sys/endian.h \
-  /usr/include/sys/cdefs.h /usr/include/sys/_types.h \
-  /usr/include/machine/_types.h /usr/include/x86/_types.h \
-  /usr/include/machine/_limits.h /usr/include/x86/_limits.h \
-  /usr/include/machine/endian.h /usr/include/x86/endian.h \
-  /usr/include/sys/_endian.h /usr/include/osreldate.h \
-  /usr/include/stdio.h /usr/include/sys/_null.h \
-  /usr/include/c++/v1/stdlib.h /usr/include/stdlib.h \
+CMakeFiles/leetcode_c_plus_plus.dir/src/leetcode.cpp.o: \
+  /home/rich/projects/leetcode/C++/leetcode_c_plus_plus/src/leetcode.cpp \
   /usr/include/c++/v1/iostream /usr/include/c++/v1/__assert \
-  /usr/include/c++/v1/__verbose_abort /usr/include/c++/v1/__availability \
-  /usr/include/c++/v1/version /usr/include/c++/v1/ios \
-  /usr/include/c++/v1/__ios/fpos.h /usr/include/c++/v1/iosfwd \
-  /usr/include/c++/v1/__fwd/string.h \
+  /usr/include/c++/v1/__config /usr/include/c++/v1/__config_site \
+  /usr/include/sys/endian.h /usr/include/sys/cdefs.h \
+  /usr/include/sys/_types.h /usr/include/machine/_types.h \
+  /usr/include/x86/_types.h /usr/include/machine/_limits.h \
+  /usr/include/x86/_limits.h /usr/include/machine/endian.h \
+  /usr/include/x86/endian.h /usr/include/sys/_endian.h \
+  /usr/include/osreldate.h /usr/include/c++/v1/__verbose_abort \
+  /usr/include/c++/v1/__availability /usr/include/c++/v1/version \
+  /usr/include/c++/v1/ios /usr/include/c++/v1/__ios/fpos.h \
+  /usr/include/c++/v1/iosfwd /usr/include/c++/v1/__fwd/string.h \
   /usr/include/c++/v1/__fwd/memory_resource.h \
   /usr/include/c++/v1/__mbstate_t.h /usr/include/c++/v1/wchar.h \
   /usr/include/c++/v1/stddef.h /usr/include/stddef.h \
-  /usr/include/wchar.h /usr/include/_ctype.h /usr/include/runetype.h \
-  /usr/include/xlocale/_wchar.h /usr/include/c++/v1/__locale \
-  /usr/include/c++/v1/cctype /usr/include/c++/v1/ctype.h \
-  /usr/include/ctype.h /usr/include/xlocale/_ctype.h \
-  /usr/include/c++/v1/cstdint /usr/include/c++/v1/stdint.h \
-  /usr/include/stdint.h /usr/include/machine/_stdint.h \
-  /usr/include/x86/_stdint.h /usr/include/sys/_stdint.h \
-  /usr/include/c++/v1/locale.h /usr/include/locale.h \
-  /usr/include/xlocale/_locale.h /usr/include/c++/v1/mutex \
-  /usr/include/c++/v1/__memory/shared_ptr.h \
+  /usr/include/sys/_null.h /usr/include/wchar.h /usr/include/_ctype.h \
+  /usr/include/runetype.h /usr/include/xlocale/_wchar.h \
+  /usr/include/c++/v1/__locale /usr/include/c++/v1/cctype \
+  /usr/include/c++/v1/ctype.h /usr/include/ctype.h \
+  /usr/include/xlocale/_ctype.h /usr/include/c++/v1/cstdint \
+  /usr/include/c++/v1/stdint.h /usr/include/stdint.h \
+  /usr/include/machine/_stdint.h /usr/include/x86/_stdint.h \
+  /usr/include/sys/_stdint.h /usr/include/c++/v1/locale.h \
+  /usr/include/locale.h /usr/include/xlocale/_locale.h \
+  /usr/include/c++/v1/mutex /usr/include/c++/v1/__memory/shared_ptr.h \
   /usr/include/c++/v1/__compare/compare_three_way.h \
   /usr/include/c++/v1/__compare/three_way_comparable.h \
   /usr/include/c++/v1/__compare/common_comparison_category.h \
@@ -97,6 +94,7 @@ CMakeFiles/leetcode_c_plus_plus.dir/src/main.cpp.o: \
   /usr/include/c++/v1/__type_traits/is_nothrow_constructible.h \
   /usr/include/c++/v1/__type_traits/is_constructible.h \
   /usr/include/c++/v1/new /usr/include/c++/v1/cstdlib \
+  /usr/include/c++/v1/stdlib.h /usr/include/stdlib.h \
   /usr/include/c++/v1/exception \
   /usr/include/c++/v1/__type_traits/is_class.h \
   /usr/include/c++/v1/__type_traits/is_final.h \
@@ -336,7 +334,8 @@ CMakeFiles/leetcode_c_plus_plus.dir/src/main.cpp.o: \
   /usr/include/c++/v1/__algorithm/find_end.h \
   /usr/include/c++/v1/__algorithm/search.h \
   /usr/include/c++/v1/__algorithm/find_first_of.h \
-  /usr/include/c++/v1/cstdio /usr/include/c++/v1/cwchar \
+  /usr/include/c++/v1/cstdio /usr/include/c++/v1/stdio.h \
+  /usr/include/stdio.h /usr/include/c++/v1/cwchar \
   /usr/include/c++/v1/cwctype /usr/include/c++/v1/wctype.h \
   /usr/include/wctype.h \
   /usr/include/c++/v1/__string/extern_template_lists.h \
@@ -617,4 +616,7 @@ CMakeFiles/leetcode_c_plus_plus.dir/src/main.cpp.o: \
   /usr/include/c++/v1/__bsd_locale_defaults.h \
   /usr/include/c++/v1/cstdarg /usr/include/stdarg.h \
   /usr/include/x86/stdarg.h /usr/include/sys/_stdarg.h \
-  /home/rich/projects/leetcode/C++/leetcode_c_plus_plus/src/../include/leetcode.h
+  /home/rich/projects/leetcode/C++/leetcode_c_plus_plus/src/../include/leetcode.h \
+  /home/rich/projects/leetcode/C++/leetcode_c_plus_plus/src/../include/running_sum_of_1d_array_1480.h \
+  /home/rich/projects/leetcode/C++/leetcode_c_plus_plus/src/../include/richest_customer_wealth_1672.h \
+  /home/rich/projects/leetcode/C++/leetcode_c_plus_plus/src/../include/fizz_buzz_412.h

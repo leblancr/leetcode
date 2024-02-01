@@ -198,6 +198,30 @@ src/fizz_buzz_412.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/leetcode_c_plus_plus.dir/build.make CMakeFiles/leetcode_c_plus_plus.dir/src/fizz_buzz_412.cpp.s
 .PHONY : src/fizz_buzz_412.cpp.s
 
+src/leetcode.o: src/leetcode.cpp.o
+.PHONY : src/leetcode.o
+
+# target to build an object file
+src/leetcode.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/leetcode_c_plus_plus.dir/build.make CMakeFiles/leetcode_c_plus_plus.dir/src/leetcode.cpp.o
+.PHONY : src/leetcode.cpp.o
+
+src/leetcode.i: src/leetcode.cpp.i
+.PHONY : src/leetcode.i
+
+# target to preprocess a source file
+src/leetcode.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/leetcode_c_plus_plus.dir/build.make CMakeFiles/leetcode_c_plus_plus.dir/src/leetcode.cpp.i
+.PHONY : src/leetcode.cpp.i
+
+src/leetcode.s: src/leetcode.cpp.s
+.PHONY : src/leetcode.s
+
+# target to generate assembly for a file
+src/leetcode.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/leetcode_c_plus_plus.dir/build.make CMakeFiles/leetcode_c_plus_plus.dir/src/leetcode.cpp.s
+.PHONY : src/leetcode.cpp.s
+
 src/main.o: src/main.cpp.o
 .PHONY : src/main.o
 
@@ -286,6 +310,9 @@ help:
 	@echo "... src/fizz_buzz_412.o"
 	@echo "... src/fizz_buzz_412.i"
 	@echo "... src/fizz_buzz_412.s"
+	@echo "... src/leetcode.o"
+	@echo "... src/leetcode.i"
+	@echo "... src/leetcode.s"
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"

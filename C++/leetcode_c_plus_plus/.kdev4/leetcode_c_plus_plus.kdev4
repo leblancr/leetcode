@@ -39,3 +39,6 @@ isExecutable=false
 
 [Project]
 VersionControlSupport=
+
+[SourceFileTemplates]
+LastUsedTemplate=/home/rich/.local/share/kdevfiletemplates/template_descriptions/cpp_basic.desktop

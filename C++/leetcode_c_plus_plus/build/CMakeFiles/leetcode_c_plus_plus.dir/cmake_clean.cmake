@@ -1,6 +1,8 @@
 file(REMOVE_RECURSE
   "CMakeFiles/leetcode_c_plus_plus.dir/src/fizz_buzz_412.cpp.o"
   "CMakeFiles/leetcode_c_plus_plus.dir/src/fizz_buzz_412.cpp.o.d"
+  "CMakeFiles/leetcode_c_plus_plus.dir/src/leetcode.cpp.o"
+  "CMakeFiles/leetcode_c_plus_plus.dir/src/leetcode.cpp.o.d"
   "CMakeFiles/leetcode_c_plus_plus.dir/src/main.cpp.o"
   "CMakeFiles/leetcode_c_plus_plus.dir/src/main.cpp.o.d"
   "CMakeFiles/leetcode_c_plus_plus.dir/src/richest_customer_wealth_1672.cpp.o"

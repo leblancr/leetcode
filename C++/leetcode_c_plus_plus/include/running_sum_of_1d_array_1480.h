@@ -6,6 +6,6 @@
 #include <vector>
 #include <iostream>
 
-std::vector<int> process_numbers(const std::vector<int>& numbers);
+std::vector<int> calculate_running_sum(const std::vector<int>& numbers);
 
 #endif // RUNNING_SUM_H
