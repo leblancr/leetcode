@@ -1,8 +1,13 @@
+class RichestCustomerWealth:
+    numbers = []
 
-def calculate_richest_customer_wealth(accounts):
-    rcw = max(map(sum, accounts))
+    def __init__(self, accounts):
+        self.accounts = accounts
 
-    return rcw
+    def calculate_richest_customer_wealth(self):
+        rcw = max(map(sum, self.accounts))
+
+        return rcw
 
 
 

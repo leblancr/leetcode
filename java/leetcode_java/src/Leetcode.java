@@ -19,13 +19,6 @@ public class Leetcode {
         System.out.printf("Richest customer's wealth is %d\n\n", rcw);
     }
 
-    void fizzBuzz412() {
-        System.out.println("412. Fizz Buzz");
-        int limit = 16;
-        FizzBuzz412 fizzBuzz = new FizzBuzz412();
-        fizzBuzz.calculateFizzBuzz(limit);  // go up to limit
-    }
-
     // build customer accounts
     private static int getRcw() {
         List<List<Integer>> accounts = new ArrayList<>();
@@ -39,4 +32,12 @@ public class Leetcode {
         RichestCustomerWealth1672 solution1672 = new RichestCustomerWealth1672();
         return solution1672.calculateRichestCustomerWealth(accounts);
     }
+
+    void fizzBuzz412() {
+        System.out.println("412. Fizz Buzz");
+        int limit = 16;
+        FizzBuzz412 fizzBuzz = new FizzBuzz412();
+        fizzBuzz.calculateFizzBuzz(limit);  // go up to limit
+    }
+
 }

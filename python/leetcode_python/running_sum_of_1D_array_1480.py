@@ -1,13 +1,18 @@
-def calculate_running_sum(numbers):
-    # numbers = [3, 1, 2, 10, 1]
-    running_sum = 0
-    result = []
+class RunningSumOf1DArray1480:
+    numbers = []
 
-    print("input_list: ", numbers)
+    def __init__(self, numbers):
+        self.numbers = numbers
 
-    for number in numbers:
-        running_sum += number
-        # print("running_sum: ", running_sum)
-        result.append(running_sum)
+    def calculate_running_sum(self):
+        running_sum = 0
+        result = []
 
-    return result
+        print("input_list: ", self.numbers)
+
+        for number in self.numbers:
+            running_sum += number
+            # print("running_sum: ", running_sum)
+            result.append(running_sum)
+
+        return result
