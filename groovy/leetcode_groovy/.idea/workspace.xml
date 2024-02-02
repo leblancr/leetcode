@@ -5,12 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4cb78788-7bad-489e-a16e-70aaa5413a47" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/Leetcode.groovy" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main.groovy" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.groovy" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/RunningSumOf1DArray1480.groovy" beforeDir="false" afterPath="$PROJECT_DIR$/src/RunningSumOf1DArray1480.groovy" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/fizzBuzz412.groovy" beforeDir="false" afterPath="$PROJECT_DIR$/src/FizzBuzz412.groovy" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

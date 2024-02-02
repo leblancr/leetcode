@@ -23,6 +23,7 @@ Leetcode::~Leetcode() {
 
 // 1480. Running Sum of 1D Array
 void Leetcode::running_sum_of_1d_array_1480() {
+    cout << "1480. Running Sum of 1D Array" << endl;
     int count = 0;
     vector<int> numbers = {1, 2, 3, 4, 5};
     int size = numbers.size();
@@ -39,9 +40,9 @@ void Leetcode::running_sum_of_1d_array_1480() {
     cout << "]\n\n";
 }
 
-
 // 1672. Richest Customer Wealth
 void Leetcode::richest_customer_wealth_1672() {
+    cout << "1672. Richest Customer Wealth" << endl;
     vector<vector<int>> accounts = {
         {1, 2, 3},
         {4, 5, 6},
@@ -53,6 +54,7 @@ void Leetcode::richest_customer_wealth_1672() {
 
 // 412. Fizz Buzz
 void Leetcode::fizz_buzz_412() {
+    cout << "412. Fizz Buzz" << endl;
     int limit = 17;  // check up to limit
     vector<string> result = calculate_fizz_buzz(limit);
 
