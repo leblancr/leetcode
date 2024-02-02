@@ -246,6 +246,30 @@ src/main.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/leetcode_c_plus_plus.dir/build.make CMakeFiles/leetcode_c_plus_plus.dir/src/main.cpp.s
 .PHONY : src/main.cpp.s
 
+src/reduce_a_number_to_zero_1342.o: src/reduce_a_number_to_zero_1342.cpp.o
+.PHONY : src/reduce_a_number_to_zero_1342.o
+
+# target to build an object file
+src/reduce_a_number_to_zero_1342.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/leetcode_c_plus_plus.dir/build.make CMakeFiles/leetcode_c_plus_plus.dir/src/reduce_a_number_to_zero_1342.cpp.o
+.PHONY : src/reduce_a_number_to_zero_1342.cpp.o
+
+src/reduce_a_number_to_zero_1342.i: src/reduce_a_number_to_zero_1342.cpp.i
+.PHONY : src/reduce_a_number_to_zero_1342.i
+
+# target to preprocess a source file
+src/reduce_a_number_to_zero_1342.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/leetcode_c_plus_plus.dir/build.make CMakeFiles/leetcode_c_plus_plus.dir/src/reduce_a_number_to_zero_1342.cpp.i
+.PHONY : src/reduce_a_number_to_zero_1342.cpp.i
+
+src/reduce_a_number_to_zero_1342.s: src/reduce_a_number_to_zero_1342.cpp.s
+.PHONY : src/reduce_a_number_to_zero_1342.s
+
+# target to generate assembly for a file
+src/reduce_a_number_to_zero_1342.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/leetcode_c_plus_plus.dir/build.make CMakeFiles/leetcode_c_plus_plus.dir/src/reduce_a_number_to_zero_1342.cpp.s
+.PHONY : src/reduce_a_number_to_zero_1342.cpp.s
+
 src/richest_customer_wealth_1672.o: src/richest_customer_wealth_1672.cpp.o
 .PHONY : src/richest_customer_wealth_1672.o
 
@@ -316,6 +340,9 @@ help:
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"
+	@echo "... src/reduce_a_number_to_zero_1342.o"
+	@echo "... src/reduce_a_number_to_zero_1342.i"
+	@echo "... src/reduce_a_number_to_zero_1342.s"
 	@echo "... src/richest_customer_wealth_1672.o"
 	@echo "... src/richest_customer_wealth_1672.i"
 	@echo "... src/richest_customer_wealth_1672.s"

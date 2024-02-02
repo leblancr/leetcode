@@ -5,7 +5,19 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4cb78788-7bad-489e-a16e-70aaa5413a47" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../rust/leetcode_rust/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../rust/leetcode_rust/.idea/leetcode_rust.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../rust/leetcode_rust/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../rust/leetcode_rust/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../rust/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../rust/Cargo.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../rust/Cargo.toml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../rust/src/leetcode.rs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../rust/src/leetcode/fizz_buzz_412.rs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../rust/src/leetcode/merge_strings_alternately_1768.rs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../rust/src/leetcode/richest_customer_wealth_1672.rs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../rust/src/leetcode/running_sum_of_1d_array_1480.rs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../rust/src/main.rs" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

@@ -2,7 +2,7 @@ class RichestCustomerWealth:
     accounts = []
 
     def __init__(self, accounts):
-        self.accounts = accounts
+        accounts = accounts
 
     def calculate_richest_customer_wealth(self):
         rcw = max(map(sum, self.accounts))

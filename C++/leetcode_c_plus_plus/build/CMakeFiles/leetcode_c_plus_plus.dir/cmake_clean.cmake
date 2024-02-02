@@ -5,6 +5,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/leetcode_c_plus_plus.dir/src/leetcode.cpp.o.d"
   "CMakeFiles/leetcode_c_plus_plus.dir/src/main.cpp.o"
   "CMakeFiles/leetcode_c_plus_plus.dir/src/main.cpp.o.d"
+  "CMakeFiles/leetcode_c_plus_plus.dir/src/reduce_a_number_to_zero_1342.cpp.o"
+  "CMakeFiles/leetcode_c_plus_plus.dir/src/reduce_a_number_to_zero_1342.cpp.o.d"
   "CMakeFiles/leetcode_c_plus_plus.dir/src/richest_customer_wealth_1672.cpp.o"
   "CMakeFiles/leetcode_c_plus_plus.dir/src/richest_customer_wealth_1672.cpp.o.d"
   "CMakeFiles/leetcode_c_plus_plus.dir/src/running_sum_of_1d_array_1480.cpp.o"

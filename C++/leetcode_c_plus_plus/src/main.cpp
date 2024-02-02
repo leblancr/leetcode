@@ -16,7 +16,7 @@ int main(int argc, char* argv[]) {
     leetcode->running_sum_of_1d_array_1480();  // use -> for smart pointer
     leetcode->richest_customer_wealth_1672();
     leetcode->fizz_buzz_412();
-
+    leetcode->number_of_steps_to_reduce_a_number_to_zero_1342();
 
     cout << endl;
 

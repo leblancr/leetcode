@@ -1,5 +1,5 @@
-CMakeFiles/leetcode_c_plus_plus.dir/src/leetcode.cpp.o: \
-  /home/rich/projects/leetcode/C++/leetcode_c_plus_plus/src/leetcode.cpp \
+CMakeFiles/leetcode_c_plus_plus.dir/src/reduce_a_number_to_zero_1342.cpp.o: \
+  /home/rich/projects/leetcode/C++/leetcode_c_plus_plus/src/reduce_a_number_to_zero_1342.cpp \
   /usr/include/c++/v1/iostream /usr/include/c++/v1/__assert \
   /usr/include/c++/v1/__config /usr/include/c++/v1/__config_site \
   /usr/include/sys/endian.h /usr/include/sys/cdefs.h \
@@ -615,9 +615,4 @@ CMakeFiles/leetcode_c_plus_plus.dir/src/leetcode.cpp.o: \
   /usr/include/c++/v1/streambuf /usr/include/nl_types.h \
   /usr/include/c++/v1/__bsd_locale_defaults.h \
   /usr/include/c++/v1/cstdarg /usr/include/stdarg.h \
-  /usr/include/x86/stdarg.h /usr/include/sys/_stdarg.h \
-  /home/rich/projects/leetcode/C++/leetcode_c_plus_plus/src/../include/leetcode.h \
-  /home/rich/projects/leetcode/C++/leetcode_c_plus_plus/src/../include/running_sum_of_1d_array_1480.h \
-  /home/rich/projects/leetcode/C++/leetcode_c_plus_plus/src/../include/richest_customer_wealth_1672.h \
-  /home/rich/projects/leetcode/C++/leetcode_c_plus_plus/src/../include/fizz_buzz_412.h \
-  /home/rich/projects/leetcode/C++/leetcode_c_plus_plus/src/../include/reduce_a_number_to_zero_1342.h
+  /usr/include/x86/stdarg.h /usr/include/sys/_stdarg.h

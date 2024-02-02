@@ -7,6 +7,12 @@
 },
 {
   "directory": "/home/rich/projects/leetcode/C++/leetcode_c_plus_plus/build",
+  "command": "/usr/bin/c++   -g -o CMakeFiles/leetcode_c_plus_plus.dir/src/leetcode.cpp.o -c /home/rich/projects/leetcode/C++/leetcode_c_plus_plus/src/leetcode.cpp",
+  "file": "/home/rich/projects/leetcode/C++/leetcode_c_plus_plus/src/leetcode.cpp",
+  "output": "CMakeFiles/leetcode_c_plus_plus.dir/src/leetcode.cpp.o"
+},
+{
+  "directory": "/home/rich/projects/leetcode/C++/leetcode_c_plus_plus/build",
   "command": "/usr/bin/c++   -g -o CMakeFiles/leetcode_c_plus_plus.dir/src/running_sum_of_1d_array_1480.cpp.o -c /home/rich/projects/leetcode/C++/leetcode_c_plus_plus/src/running_sum_of_1d_array_1480.cpp",
   "file": "/home/rich/projects/leetcode/C++/leetcode_c_plus_plus/src/running_sum_of_1d_array_1480.cpp",
   "output": "CMakeFiles/leetcode_c_plus_plus.dir/src/running_sum_of_1d_array_1480.cpp.o"
@@ -25,8 +31,8 @@
 },
 {
   "directory": "/home/rich/projects/leetcode/C++/leetcode_c_plus_plus/build",
-  "command": "/usr/bin/c++   -g -o CMakeFiles/leetcode_c_plus_plus.dir/src/leetcode.cpp.o -c /home/rich/projects/leetcode/C++/leetcode_c_plus_plus/src/leetcode.cpp",
-  "file": "/home/rich/projects/leetcode/C++/leetcode_c_plus_plus/src/leetcode.cpp",
-  "output": "CMakeFiles/leetcode_c_plus_plus.dir/src/leetcode.cpp.o"
+  "command": "/usr/bin/c++   -g -o CMakeFiles/leetcode_c_plus_plus.dir/src/reduce_a_number_to_zero_1342.cpp.o -c /home/rich/projects/leetcode/C++/leetcode_c_plus_plus/src/reduce_a_number_to_zero_1342.cpp",
+  "file": "/home/rich/projects/leetcode/C++/leetcode_c_plus_plus/src/reduce_a_number_to_zero_1342.cpp",
+  "output": "CMakeFiles/leetcode_c_plus_plus.dir/src/reduce_a_number_to_zero_1342.cpp.o"
 }
 ]

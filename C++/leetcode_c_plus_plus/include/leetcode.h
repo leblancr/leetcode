@@ -29,6 +29,7 @@ class Leetcode {
     void running_sum_of_1d_array_1480();
     void richest_customer_wealth_1672();
     void fizz_buzz_412();
+    void number_of_steps_to_reduce_a_number_to_zero_1342();
 
 private:
     // Private member variables or functions can go here
