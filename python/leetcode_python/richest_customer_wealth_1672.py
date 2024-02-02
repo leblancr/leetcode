@@ -1,5 +1,5 @@
 class RichestCustomerWealth:
-    numbers = []
+    accounts = []
 
     def __init__(self, accounts):
         self.accounts = accounts
