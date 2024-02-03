@@ -32,9 +32,11 @@ using namespace std;
 
 int number_of_steps_to_reduce_a_number_to_zero(int num) {
     cout << "input: " << num << endl;
-    int iter{};
+    int iter{}; // {} = initialize to zero
+
     // if num == 0 loop ends
     while(num) {
+        cout << "num: " << num << endl;
         num = num % 2 == 0 ? num / 2 : num - 1;
         iter++;
     }

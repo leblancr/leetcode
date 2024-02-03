@@ -68,9 +68,8 @@ void Leetcode::fizz_buzz_412() {
 // 1342. Number of Steps to Reduce a Number to Zero
 void Leetcode::number_of_steps_to_reduce_a_number_to_zero_1342() {
     cout << "1342. Number of Steps to Reduce a Number to Zero" << endl;
-    int number = 17;  // number to divide by 2
+    int number = 9;  // number to divide by 2
     int result = number_of_steps_to_reduce_a_number_to_zero(number);
-
     cout <<  "Number of steps: " << result << "\n\n";
 }
 

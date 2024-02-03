@@ -1,6 +1,7 @@
 // RichestCustomerWealth1672.groovy
 
 class RichestCustomerWealth1672 {
+    // Static methods can be invoked without creating an instance of the class.
     static int calculateRichestCustomerWealth(List<List<Integer>> accounts) {
         int highestWealth = 0
 
