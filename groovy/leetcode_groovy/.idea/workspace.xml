@@ -5,16 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4cb78788-7bad-489e-a16e-70aaa5413a47" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/NumberOfStepsToReduceANumberToZero1342.groovy" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../C++/leetcode_c_plus_plus/build/CMakeFiles/leetcode_c_plus_plus.dir/src/leetcode.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/../../C++/leetcode_c_plus_plus/build/CMakeFiles/leetcode_c_plus_plus.dir/src/leetcode.cpp.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../C++/leetcode_c_plus_plus/build/CMakeFiles/leetcode_c_plus_plus.dir/src/reduce_a_number_to_zero_1342.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/../../C++/leetcode_c_plus_plus/build/CMakeFiles/leetcode_c_plus_plus.dir/src/reduce_a_number_to_zero_1342.cpp.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../C++/leetcode_c_plus_plus/build/leetcode_c_plus_plus" beforeDir="false" afterPath="$PROJECT_DIR$/../../C++/leetcode_c_plus_plus/build/leetcode_c_plus_plus" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../C++/leetcode_c_plus_plus/src/leetcode.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/../../C++/leetcode_c_plus_plus/src/leetcode.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../C++/leetcode_c_plus_plus/src/reduce_a_number_to_zero_1342.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/../../C++/leetcode_c_plus_plus/src/reduce_a_number_to_zero_1342.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../scala/leetcode_scala/src/Mathematician.sc" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Leetcode.groovy" beforeDir="false" afterPath="$PROJECT_DIR$/src/Leetcode.groovy" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main.groovy" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.groovy" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/RichestCustomerWealth1672.groovy" beforeDir="false" afterPath="$PROJECT_DIR$/src/RichestCustomerWealth1672.groovy" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -33,6 +25,9 @@
   <component name="ProblemsViewState">
     <option name="selectedTabId" value="CurrentFile" />
   </component>
+  <component name="ProjectCodeStyleSettingsMigration">
+    <option name="version" value="2" />
+  </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 8
 }</component>
@@ -41,23 +36,23 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Groovy.Main.executor": "Run",
-    "Groovy.RunningSumOf1DArray1480.executor": "Run",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "git-widget-placeholder": "main",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "/home/rich/projects/leetcode/groovy/leetcode_groovy/src",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.2",
-    "run.code.analysis.last.selected.profile": "pProject Default",
-    "settings.editor.selected.configurable": "configurable.group.language"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Groovy.Main.executor&quot;: &quot;Run&quot;,
+    &quot;Groovy.RunningSumOf1DArray1480.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/home/rich/projects/leetcode/groovy/leetcode_groovy/src&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;run.code.analysis.last.selected.profile&quot;: &quot;pProject Default&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;configurable.group.language&quot;
   }
-}]]></component>
+}</component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
