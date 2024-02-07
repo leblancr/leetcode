@@ -38,6 +38,15 @@ public class Leetcode {
         int limit = 16;
         FizzBuzz412 fizzBuzz = new FizzBuzz412();
         fizzBuzz.calculateFizzBuzz(limit);  // go up to limit
+        System.out.printf("\n\n");
+    }
+
+    void numberOfStepsToReduceANumberToZero1342() {
+        System.out.println("1342. Number of Steps to Reduce a Number to Zero");
+        int number = 16;
+        NumberOfStepsToReduceANumberToZero1342 reduceANumber = new NumberOfStepsToReduceANumberToZero1342(number);
+        int ns = reduceANumber.reduceANumberToZero(number);
+        System.out.printf("Number of steps %d\n\n", ns);
     }
 
 }
