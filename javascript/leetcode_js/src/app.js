@@ -7,4 +7,4 @@ const leetcode = new Leetcode()
 leetcode.runningSumOf1DArray1480()
 leetcode.richestCustomerWealth1672()
 leetcode.fizzBuzz412()
-
+leetcode.numberOfStepsToReduceANumberToZero1342()

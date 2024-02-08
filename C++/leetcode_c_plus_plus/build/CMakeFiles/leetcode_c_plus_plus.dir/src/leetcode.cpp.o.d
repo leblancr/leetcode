@@ -619,5 +619,4 @@ CMakeFiles/leetcode_c_plus_plus.dir/src/leetcode.cpp.o: \
   /home/rich/projects/leetcode/C++/leetcode_c_plus_plus/src/../include/leetcode.h \
   /home/rich/projects/leetcode/C++/leetcode_c_plus_plus/src/../include/running_sum_of_1d_array_1480.h \
   /home/rich/projects/leetcode/C++/leetcode_c_plus_plus/src/../include/richest_customer_wealth_1672.h \
-  /home/rich/projects/leetcode/C++/leetcode_c_plus_plus/src/../include/fizz_buzz_412.h \
-  /home/rich/projects/leetcode/C++/leetcode_c_plus_plus/src/../include/reduce_a_number_to_zero_1342.h
+  /home/rich/projects/leetcode/C++/leetcode_c_plus_plus/src/../include/fizz_buzz_412.h

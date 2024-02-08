@@ -7,7 +7,6 @@
 #include "../include/running_sum_of_1d_array_1480.h"
 #include "../include/richest_customer_wealth_1672.h"
 #include "../include/fizz_buzz_412.h"
-#include "../include/reduce_a_number_to_zero_1342.h"
 
 using namespace std;
 
@@ -66,10 +65,22 @@ void Leetcode::fizz_buzz_412() {
 }
 
 // 1342. Number of Steps to Reduce a Number to Zero
+// no .h or .cpp for this one, solution below.
 void Leetcode::number_of_steps_to_reduce_a_number_to_zero_1342() {
     cout << "1342. Number of Steps to Reduce a Number to Zero" << endl;
-    int number = 9;  // number to divide by 2
-    int result = number_of_steps_to_reduce_a_number_to_zero(number);
-    cout <<  "Number of steps: " << result << "\n\n";
+    int num = 9;  // number to divide by 2
+    int steps{}; // {} = initialize to zero
+
+    // int result = number_of_steps_to_reduce_a_number_to_zero(number);
+    cout << "input: " << num << endl;
+
+    // Solution
+    while(num) {
+        cout << "num: " << num << endl;
+        num = num % 2 == 0 ? num / 2 : num - 1;
+        steps++;
+    }
+
+    cout <<  "Number of steps: " << steps << "\n\n";
 }
 

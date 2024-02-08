@@ -28,11 +28,5 @@
   "command": "/usr/bin/c++   -g -o CMakeFiles/leetcode_c_plus_plus.dir/src/fizz_buzz_412.cpp.o -c /home/rich/projects/leetcode/C++/leetcode_c_plus_plus/src/fizz_buzz_412.cpp",
   "file": "/home/rich/projects/leetcode/C++/leetcode_c_plus_plus/src/fizz_buzz_412.cpp",
   "output": "CMakeFiles/leetcode_c_plus_plus.dir/src/fizz_buzz_412.cpp.o"
-},
-{
-  "directory": "/home/rich/projects/leetcode/C++/leetcode_c_plus_plus/build",
-  "command": "/usr/bin/c++   -g -o CMakeFiles/leetcode_c_plus_plus.dir/src/reduce_a_number_to_zero_1342.cpp.o -c /home/rich/projects/leetcode/C++/leetcode_c_plus_plus/src/reduce_a_number_to_zero_1342.cpp",
-  "file": "/home/rich/projects/leetcode/C++/leetcode_c_plus_plus/src/reduce_a_number_to_zero_1342.cpp",
-  "output": "CMakeFiles/leetcode_c_plus_plus.dir/src/reduce_a_number_to_zero_1342.cpp.o"
 }
 ]

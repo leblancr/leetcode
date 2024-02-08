@@ -8,7 +8,6 @@ src/leetcode.cpp
 src/running_sum_of_1d_array_1480.cpp
 src/richest_customer_wealth_1672.cpp
 src/fizz_buzz_412.cpp
-src/reduce_a_number_to_zero_1342.cpp
 )
 
 install(TARGETS leetcode_c_plus_plus RUNTIME DESTINATION bin)
