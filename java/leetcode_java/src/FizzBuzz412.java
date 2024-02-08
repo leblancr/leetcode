@@ -3,8 +3,15 @@ import java.util.List;
 
 public class FizzBuzz412 {
     private List<String> output = new ArrayList<>();
+    private int limit;
 
-    public void calculateFizzBuzz(int limit) {
+    // Constructor with parameters
+    public FizzBuzz412(int limit) {
+        // Initialize instance variables with values passed as parameters
+        this.limit = limit;
+    }
+
+    public void calculateFizzBuzz() {
         System.out.println("For loop:");
         for (int n = 1; n <= limit; n++) {
             if (n % 3 == 0 && n % 5 == 0) {

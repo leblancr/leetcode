@@ -35,9 +35,9 @@ public class Leetcode {
 
     void fizzBuzz412() {
         System.out.println("412. Fizz Buzz");
-        int limit = 16;
-        FizzBuzz412 fizzBuzz = new FizzBuzz412();
-        fizzBuzz.calculateFizzBuzz(limit);  // go up to limit
+        int limit = 16;  // go up to limit
+        FizzBuzz412 fizzBuzz = new FizzBuzz412(limit);
+        fizzBuzz.calculateFizzBuzz();
         System.out.printf("\n\n");
     }
 

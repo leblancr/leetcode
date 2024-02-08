@@ -13,5 +13,5 @@ public class Main {
         leetcode.richestCustomerWealth1672();
         leetcode.fizzBuzz412();
         leetcode.numberOfStepsToReduceANumberToZero1342();
-     }
+    }
 }

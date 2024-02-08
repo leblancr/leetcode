@@ -9,30 +9,28 @@ class Leetcode {
 
     fun richestCustomerWealth1672() {
         println("1672. Richest Customer Wealth")
-//        val rcw = getRcw()
-//        System.out.printf("Richest customer's wealth is %d\n\n", rcw)
-    }
 
-    // build customer accounts
-//    private fun getRcw(): Int {
-//        val accounts: MutableList<List<Int>> = ArrayList()
-//        val list1: List<Int> = ArrayList(mutableListOf(1, 2, 3))
-//        val list2: List<Int> = ArrayList(mutableListOf(4, 5, 6))
-//        val list3: List<Int> = ArrayList(mutableListOf(7, 8, 9))
-//        accounts.add(list1)
-//        accounts.add(list2)
-//        accounts.add(list3)
-//
-//        val solution1672: RichestCustomerWealth1672 = RichestCustomerWealth1672()
-//        return solution1672.calculateRichestCustomerWealth(accounts)
-//    }
+        // build customer accounts
+        val accounts: MutableList<List<Int>> = ArrayList()
+        val list1: List<Int> = ArrayList(mutableListOf(1, 2, 3))
+        val list2: List<Int> = ArrayList(mutableListOf(4, 5, 6))
+        val list3: List<Int> = ArrayList(mutableListOf(7, 8, 9))
+        accounts.add(list1)
+        accounts.add(list2)
+        accounts.add(list3)
+        println("accounts: $accounts")
+
+        val solution1672 = RichestCustomerWealth1672(accounts)
+        val rcw = solution1672.calculateRichestCustomerWealth()
+        println("Richest customer's wealth: $rcw\n")
+    }
 
     fun fizzBuzz412() {
         println("412. Fizz Buzz")
-//        val limit = 16
-//        val fizzBuzz: FizzBuzz412 = FizzBuzz412()
-//        fizzBuzz.calculateFizzBuzz(limit) // go up to limit
-//        System.out.printf("\n\n")
+        val limit = 16
+        val fizzBuzz = FizzBuzz412(limit)
+        fizzBuzz.fizzBuzzWithARange()
+        fizzBuzz.fizzBuzzWithForLoop()
     }
 
     fun numberOfStepsToReduceANumberToZero1342() {
