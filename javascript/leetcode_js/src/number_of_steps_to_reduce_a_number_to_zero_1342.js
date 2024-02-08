@@ -18,7 +18,7 @@ export default class ReduceToZero {
             this.number = this.number % 2 == 0 ? this.number / 2 : this.number -= 1
             steps++
             console.log("number: ", this.number)
-            console.log("steps: ", steps)
+            // console.log("steps: ", steps)
         }
 
         return steps

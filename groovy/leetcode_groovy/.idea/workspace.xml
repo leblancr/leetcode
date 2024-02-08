@@ -5,8 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4cb78788-7bad-489e-a16e-70aaa5413a47" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/../../scala/leetcode_scala/src/Mathematician.sc" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/NumberOfStepsToReduceANumberToZero1342.groovy" beforeDir="false" afterPath="$PROJECT_DIR$/src/NumberOfStepsToReduceANumberToZero1342.groovy" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../kotlin/leetcode_koltin/.idea/codeStyles/Project.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../kotlin/leetcode_koltin/.idea/codeStyles/Project.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
