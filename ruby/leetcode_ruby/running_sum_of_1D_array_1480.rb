@@ -7,8 +7,6 @@ class RunningSumOf1DArray1480
         running_sum = 0
         result = []
 
-        puts "input_list: #{@numbers}"
-
         @numbers.each do |number|
             running_sum += number
             # "running_sum: #{running_sum}"
