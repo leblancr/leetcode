@@ -22,7 +22,7 @@ end
 def fizz_buzz_412()
     puts "412. Fizz Buzz"
     limit = 16  # check up to limit
-    fb = FizzBuzz(limit)
+    fb = FizzBuzz.new(limit)
     fb.calculate_fizz_buzz()
     puts
 end
