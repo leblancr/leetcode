@@ -31,14 +31,15 @@ class Leetcode {
         val fizzBuzz = FizzBuzz412(limit)
         fizzBuzz.fizzBuzzWithARange()
         fizzBuzz.fizzBuzzWithForLoop()
+        println()
     }
 
     fun numberOfStepsToReduceANumberToZero1342() {
         println("1342. Number of Steps to Reduce a Number to Zero")
-//        val number = 16
-//        val reduceANumber: NumberOfStepsToReduceANumberToZero1342 = NumberOfStepsToReduceANumberToZero1342(number)
-//        val ns: Int = reduceANumber.reduceANumberToZero(number)
-//        System.out.printf("Number of steps %d\n\n", ns)
+        val number = 16
+        val reduceANumber = NumberOfStepsToReduceANumberToZero1342(number)
+        val ns: Int = reduceANumber.reduceANumberToZero()
+        System.out.printf("Number of steps %d\n\n", ns)
     }
 
 

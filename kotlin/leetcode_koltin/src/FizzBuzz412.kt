@@ -27,6 +27,6 @@ class FizzBuzz412(private val limit: Int) {
                 }
             )
         }
-        println(output + "\n")
+        println(output)
     }
 }
