@@ -2,35 +2,33 @@
 module Main (main) where
 import Web.Scotty
 
-import Data.Monoid
-
 import Leetcode
 
 main :: IO ()
 main = scotty 3000 $ do
-    get "/:word" $ do
+    get "/:leetcode" $ do
         word :: String <- param "word"
 
-        let result = runningSumOf1DArray1480
+        -- Each function returns html, concat them all together
+        --let runningSumOf1DArray1480Html = runningSumOf1DArray1480
+        let richestCustomerWealth1672Html = richestCustomerWealth1672
 
-        html $ mconcat [ "<body style='background-color: black; color: white;'>"
-                       , "<h1>Running leetcode problems</h1>"
---                       , "<p>Number 1: " <> T.pack (show num1) <> "</p>"
---                       , "<p>Number 2: " <> T.pack (show num2) <> "</p>"
-                       , "<p>Result: " <> result <> "</p>"
+        html $ mconcat [ "<head>"
+                       , "<style>"
+                       , "body { background-color: black; color: white; margin: 0; padding: 0; }"
+                       , "h3 { margin: 0; padding: 0; }"
+                       , "h4 { margin: 0; padding: 0; }"                       , "p { font-size: 18px; margin: 0; padding: 0; }"
+                       , "</style>"
+                       , "</head>"
+                   --     , "<body style='background-color: black; color: white;'>"
+                       , "<h2>Running leetcode problems</h2>"
+                       --, "<p>" <> runningSumOf1DArray1480Html <> "</p>"
+                       , "<p>" <> richestCustomerWealth1672Html <> "</p>"
                        ]
 
 --        let leetcode = Leetcode
 --        runningSumOf1DArray1480
 --
---
---        html $ mconcat [ "<body style='background-color: black; color: white;'>"
---                       , "<h1>"
---                       , "Running leetcode problems"
---                       , "</h1>"
---                       , "</body>"
---                       ]
-
 
 --     leetcode.richestCustomerWealth1672()
 --     leetcode.fizzBuzz412()
