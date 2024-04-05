@@ -71,15 +71,16 @@ fizzBuzz412 = T.concat
   where
     limit :: Int
     limit = 16
+
     result :: [Dynamic]
     result = map (toDyn . fizzBuzz) [1..limit]
-      where
-        fizzBuzz :: Int -> String
-        fizzBuzz n
-          | n `mod` 3 == 0 && n `mod` 5 == 0 = "FizzBuzz"
-          | n `mod` 3 == 0 = "Fizz"
-          | n `mod` 5 == 0 = "Buzz"
-          | otherwise = show n
+
+    fizzBuzz :: Int -> String
+    fizzBuzz n
+      | n `mod` 3 == 0 && n `mod` 5 == 0 = "FizzBuzz"
+      | n `mod` 3 == 0 = "Fizz"
+      | n `mod` 5 == 0 = "Buzz"
+      | otherwise = show n
   
     -- Convert each number to Text and concatenate them with commas
     -- T.pack converts string literal ([Char]) to Text (html)
@@ -99,38 +100,28 @@ fizzBuzz412 = T.concat
 
 numberOfStepsToReduceANumberToZero1342 :: Text
 numberOfStepsToReduceANumberToZero1342 = T.concat
-    [ T.pack ("<h3>412. Fizz Buzz</h3>")
-    , T.pack ("<p>Limit: ")
-    , limitHtml
-    , T.pack ("<p>Result: ")
+    [ T.pack ("<h3>1342. Number of Steps to Reduce a Number to Zero</h3>")
+    , T.pack ("<p>Number: ")
+    , numberHtml
+    , T.pack ("<p>Number of steps: ")
     , resultHtml
     , T.pack ("</p>")
     ]
   where
-    limit :: Int
-    limit = 16
-    result :: [Dynamic]
-    result = map (toDyn . fizzBuzz) [1..limit]
-      where
-        fizzBuzz :: Int -> String
-        fizzBuzz n
-          | n `mod` 3 == 0 && n `mod` 5 == 0 = "FizzBuzz"
-          | n `mod` 3 == 0 = "Fizz"
-          | n `mod` 5 == 0 = "Buzz"
-          | otherwise = show n
-  
-    -- Convert each number to Text and concatenate them with commas
-    -- T.pack converts string literal ([Char]) to Text (html)
-    limitHtml :: Text  -- html must be of type Text
-    limitHtml = T.pack (show limit)  -- Convert Int to Text
+    number :: Int
+    number = 14
     
-    -- Convert Dynamic values to Text
-    dynToText :: Dynamic -> Text
-    dynToText dyn =
-        case fromDynamic dyn of
-            Just textValue -> T.pack textValue  -- Convert String to Text
-            Nothing -> T.pack $ show (fromDyn dyn "")
-                            
-    -- Convert each number to Text and concatenate them with commas
+    steps :: Int
+    steps = reduceToZero number 0
+    
+    reduceToZero :: Int -> Int -> Int
+    reduceToZero 0 steps = steps
+    reduceToZero number steps
+      | even number = reduceToZero (number `div` 2) (steps + 1)
+      | otherwise   = reduceToZero (number - 1) (steps + 1)
+    
+    numberHtml :: Text
+    numberHtml = T.pack (show number)
+
     resultHtml :: Text
-    resultHtml = T.intercalate (T.pack ", ") $ map dynToText result
+    resultHtml = T.pack (show steps)

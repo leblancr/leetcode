@@ -3,20 +3,17 @@
 # In one step, if the current number is even, you have to divide it by 2,
 # otherwise, you have to subtract 1 from it.
 
-def number_of_steps(num: int) -> int:
+class NumSteps:
+    def __init__(self, number):
+        self.number = number
 
-    steps = 0
+    def number_of_steps(self) -> int:
+        steps = 0
 
-    while num:
-        print(num)
-        num = num // 2 if num % 2 == 0 else num - 1
-        steps += 1
+        while self.number:
+            # print(self.number)
+            self.number = self.number // 2 if self.number % 2 == 0 else self.number - 1
+            steps += 1
 
-    return steps
-
-
-if __name__ == '__main__':
-    for n in range(15):
-        print(f"Number of steps: {number_of_steps(n)}")
-
+        return steps
 
