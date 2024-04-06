@@ -6,6 +6,7 @@ from merge_strings_alternately_1768 import MergeStrings
 from reverse_vowels_of_a_string_345 import ReverseVowels
 from find_the_highest_altitude_1732 import HighestAltitude
 from reverse_words_in_a_string_151 import ReverseWords
+from product_of_array_except_self_238 import ProductArray
 
 
 def running_sum_of_1d_array_1480():
@@ -84,3 +85,11 @@ def reverse_words_in_a_string_151():
         rw = ReverseWords(string)
         print(f"result string: {rw.reverse_words()}\n")
 
+
+def product_of_array_except_self_238():
+    print("238. Product of Array Except Self")
+    number_lists = [[1, 2, 3, 4], [-1, 1, 0, -3, 3]]
+
+    for number_list in number_lists:
+        pa = ProductArray(number_list)
+        print(f"output: {pa.product_of_array_except_self()}\n")
