@@ -4,6 +4,8 @@ from fizz_buzz_412 import FizzBuzz
 from reduce_a_number_to_zero_1342 import NumSteps
 from merge_strings_alternately_1768 import MergeStrings
 from reverse_vowels_of_a_string_345 import ReverseVowels
+from find_the_highest_altitude_1732 import HighestAltitude
+from reverse_words_in_a_string_151 import ReverseWords
 
 
 def running_sum_of_1d_array_1480():
@@ -52,7 +54,7 @@ def merge_strings_alternately_1768():
     print(f"merged string: {ms.merge_strings()}\n")
 
 
-def reverse_vowels_of_a_string():
+def reverse_vowels_of_a_string_345():
     print("345. Reverse Vowels of a String")
     input_strings = ['hello', 'leetcode', 'xylophone']
 
@@ -60,4 +62,25 @@ def reverse_vowels_of_a_string():
         print(f"input string: {string}")
         rv = ReverseVowels(string)
         print(f"result string: {rv.reverse_vowels()}\n")
+
+
+def find_the_highest_altitude_1732():
+    print("1732. Find the Highest Altitude")
+    gains = [[-5, 1, 5, 0, -7], [-4, -3, -2, -1, 4, 3, 2]]
+
+    # for each list find the highest altitude
+    for gain in gains:
+        print(f"gain: {gain}")
+        ha = HighestAltitude(gain)
+        print(f"highest altitude: {ha.find_the_highest_altitude()}\n")
+
+
+def reverse_words_in_a_string_151():
+    print("345. Reverse Words in a String")
+    input_strings = ['the sky is blue', '  hello world  ', 'a good   example']
+
+    for string in input_strings:
+        print(f"input string: {string}")
+        rw = ReverseWords(string)
+        print(f"result string: {rw.reverse_words()}\n")
 
