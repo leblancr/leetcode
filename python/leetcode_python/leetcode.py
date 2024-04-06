@@ -3,6 +3,7 @@ from richest_customer_wealth_1672 import RichestCustomerWealth
 from fizz_buzz_412 import FizzBuzz
 from reduce_a_number_to_zero_1342 import NumSteps
 from merge_strings_alternately_1768 import MergeStrings
+from reverse_vowels_of_a_string_345 import ReverseVowels
 
 
 def running_sum_of_1d_array_1480():
@@ -49,3 +50,14 @@ def merge_strings_alternately_1768():
     print("words: ", words)
     ms = MergeStrings(words)
     print(f"merged string: {ms.merge_strings()}\n")
+
+
+def reverse_vowels_of_a_string():
+    print("345. Reverse Vowels of a String")
+    input_strings = ['hello', 'leetcode', 'xylophone']
+
+    for string in input_strings:
+        print(f"input string: {string}")
+        rv = ReverseVowels(string)
+        print(f"result string: {rv.reverse_vowels()}\n")
+
