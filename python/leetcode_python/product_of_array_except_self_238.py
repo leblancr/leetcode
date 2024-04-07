@@ -21,13 +21,14 @@ class ProductArray:
     def product_of_array_except_self(self) -> list:
         output = []
 
+        #
         for item in self.input_array:
             my_value = item
             result = 1
 
             for item2 in self.input_array:
                 if item2 == my_value:
-                    continue
+                    continue  # exclude yourself
                 result *= item2
 
             output.append(result)

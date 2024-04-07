@@ -8,7 +8,7 @@ from find_the_highest_altitude_1732 import HighestAltitude
 from reverse_words_in_a_string_151 import ReverseWords
 from product_of_array_except_self_238 import ProductArray
 from increasing_triplet_subsequence_334 import IncreasingTripletSubsequence
-
+from container_with_most_water_11 import ContainerWithMostWater
 
 def running_sum_of_1d_array_1480():
     print("1480. Running Sum of 1D Array")
@@ -103,3 +103,13 @@ def increasing_triplet_subsequence_334():
     for number_list in number_lists:
         its = IncreasingTripletSubsequence(number_list)
         print(f"output: {its.increasing_triplet_subsequence()}\n")
+
+
+def container_with_most_water_11():
+    print("11. Container With Most Water")
+    number_lists = [[1, 8, 6, 2, 5, 4, 8, 3, 7], [1, 1]]
+
+    for number_list in number_lists:
+        print(f"input: {number_list}")
+        mw = ContainerWithMostWater(number_list)
+        print(f"output: {mw.container_with_most_water()}\n")
