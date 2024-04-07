@@ -7,6 +7,7 @@ from reverse_vowels_of_a_string_345 import ReverseVowels
 from find_the_highest_altitude_1732 import HighestAltitude
 from reverse_words_in_a_string_151 import ReverseWords
 from product_of_array_except_self_238 import ProductArray
+from increasing_triplet_subsequence_334 import IncreasingTripletSubsequence
 
 
 def running_sum_of_1d_array_1480():
@@ -93,3 +94,12 @@ def product_of_array_except_self_238():
     for number_list in number_lists:
         pa = ProductArray(number_list)
         print(f"output: {pa.product_of_array_except_self()}\n")
+
+
+def increasing_triplet_subsequence_334():
+    print("334. Increasing Triplet Subsequence")
+    number_lists = [[1, 2, 3, 4, 5], [5, 4, 3, 2, 1], [2, 1, 5, 0, 4, 6]]
+
+    for number_list in number_lists:
+        its = IncreasingTripletSubsequence(number_list)
+        print(f"output: {its.increasing_triplet_subsequence()}\n")
