@@ -9,6 +9,8 @@ from reverse_words_in_a_string_151 import ReverseWords
 from product_of_array_except_self_238 import ProductArray
 from increasing_triplet_subsequence_334 import IncreasingTripletSubsequence
 from container_with_most_water_11 import ContainerWithMostWater
+from max_number_of_k_sum_pairs_679 import MaxPairs
+
 
 def running_sum_of_1d_array_1480():
     print("1480. Running Sum of 1D Array")
@@ -113,3 +115,14 @@ def container_with_most_water_11():
         print(f"input: {number_list}")
         mw = ContainerWithMostWater(number_list)
         print(f"output: {mw.container_with_most_water()}\n")
+
+
+def max_number_of_k_sum_pairs_679():
+    print("1679. max_number_of_k_sum_pairs")
+    input_data = [{5: [1, 2, 3, 4]},
+            {6: [3, 1, 3, 4, 3]}]
+
+    print(f"data: {input_data}")
+    mp = MaxPairs(input_data)
+    print(f"output: {mp.max_number_of_k_sum_pairs()}\n")
+
