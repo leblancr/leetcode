@@ -23,5 +23,10 @@ pycharm
 theme:
 nightfall
 
+Ruby:
+fleet
+running from terminal:
+ruby main.rb
+
 Rust:
 /opt/RustRover-233.13135.116/bin/rustrover.sh

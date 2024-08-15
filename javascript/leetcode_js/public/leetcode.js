@@ -8,8 +8,9 @@ export default class Leetcode {
     runningSumOf1DArray1480() {
         console.log("1480. Running Sum of 1D Array")
         const numbers = [1, 2, 3, 4, 5];
-        let result_list = new RunningSum(numbers)
-        console.log("result_list: ", result_list)
+        const runningSum = new RunningSum(numbers)
+        const result_list1 = runningSum.calculate_running_sum();
+        console.log("result_list1: ", result_list1)
     }
 
     richestCustomerWealth1672() {
