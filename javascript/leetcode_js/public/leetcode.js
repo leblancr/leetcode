@@ -18,6 +18,7 @@ export default class Leetcode {
         let accounts = [[1, 2, 3],
                         [4, 5, 6],
                         [7, 8, 9]]
+        console.log("accounts (JSON format):", JSON.stringify(accounts, null, 2)); // Pretty-print JSON
         let rcw = new RichestCustomerWealth(accounts)
         console.log("highest_balance: ", rcw.calculate_richest_customer_wealth())
     }

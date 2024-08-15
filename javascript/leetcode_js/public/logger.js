@@ -6,7 +6,7 @@ export function logToPage(message, tag = 'p') {
     if (resultsDiv) {
         // Create a new element with the specified tag
         const element = document.createElement(tag);
-        element.textContent = message;
+        element.textContent = typeof message === 'object' ? JSON.stringify(message, null, 2) : message; // Handle objects
         resultsDiv.appendChild(element);
     } else {
         console.error("Results element not found in the document.");
@@ -33,12 +33,12 @@ function clearInitialContent() {
 console.log = function(...args) {
     console.oldLog(...args); // Original console.log behavior
     clearInitialContent(); // Clear initial content when logging
-    logToPage(args.join(' ')); // Custom behavior to log to the page
+    logToPage(args.map(arg => (typeof arg === 'object' ? JSON.stringify(arg) : arg)).join(' '), 'p'); // Convert objects to JSON strings
 };
 
 // Example function to log as <h1> tags
 export function logAsHeading(message) {
     clearInitialContent(); // Clear initial content when logging as heading
     logToPage(message, 'h1'); // Log to page with <h1> tag
-    console.log(message); // Also log to console
+    console.oldLog(message); // Also log to console
 }
