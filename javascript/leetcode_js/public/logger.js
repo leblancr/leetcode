@@ -6,12 +6,15 @@ export function logToPage(message, tag = 'p') {
     if (resultsDiv) {
         // Create a new element with the specified tag
         const element = document.createElement(tag);
-        element.textContent = typeof message === 'object' ? JSON.stringify(message, null, 2) : message; // Handle objects
+        element.innerHTML = typeof message === 'object'
+            ? JSON.stringify(message, null, 2).replace(/\n/g, '<br>') // Handle objects with newlines
+            : message.replace(/\n/g, '<br>'); // Replace newlines with <br> tags
         resultsDiv.appendChild(element);
     } else {
         console.error("Results element not found in the document.");
     }
 }
+
 
 // Preserve the original console.log
 console.oldLog = console.log;
@@ -37,8 +40,23 @@ console.log = function(...args) {
 };
 
 // Example function to log as <h1> tags
-export function logAsHeading(message) {
+export function logAsHeading1(message) {
     clearInitialContent(); // Clear initial content when logging as heading
     logToPage(message, 'h1'); // Log to page with <h1> tag
     console.oldLog(message); // Also log to console
 }
+
+// Example function to log as <h2> tags
+export function logAsHeading2(message) {
+    clearInitialContent(); // Clear initial content when logging as heading
+    logToPage(message, 'h2'); // Log to page with <h1> tag
+    console.oldLog(message); // Also log to console
+}
+
+// Example function to log as <h3> tags
+export function logAsHeading3(message) {
+    clearInitialContent(); // Clear initial content when logging as heading
+    logToPage(message, 'h3'); // Log to page with <h1> tag
+    console.oldLog(message); // Also log to console
+}
+

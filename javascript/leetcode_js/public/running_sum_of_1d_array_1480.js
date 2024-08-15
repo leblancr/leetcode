@@ -10,26 +10,22 @@ export default class RunningSum {
     }
 
     calculate_running_sum(numbers) {
-        const resultsDiv = document.getElementById('results'); // Select the placeholder element
-
         let running_sum = 0
         let result_list = []
+        let logMessages = []  // Empty array to hold the log messages
 
         console.log("input_list: ", this.numbers)
         console.log("running_sum: ", running_sum)
 
         // push sums to result list
         for (let num of this.numbers) {
-            running_sum += num;
-            result_list.push(running_sum);
-            console.log("running_sum: ", running_sum);
+            running_sum += num
+            result_list.push(running_sum)
+            logMessages.push(`running_sum: ${running_sum}`)
         }
 
-        // Update the HTML with the results
-//        resultsDiv.innerHTML = `
-//          <p>input_list: ${this.numbers}</p>
-//          <p>result_list: ${result_list}</p>
-//        `;
+        let paragraph = logMessages.join('\n');
+        console.log(paragraph)
         
         return result_list
     }
