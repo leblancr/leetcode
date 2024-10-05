@@ -8,6 +8,9 @@ Breeze dark
 
 clang++ -std=c++11 main.cpp -o main
 
+elixir:
+intellij
+
 Groovy:
 /opt/idea-IC-233.14015.106/bin/idea.sh
 nightowl compact

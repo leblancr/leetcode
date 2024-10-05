@@ -1,4 +1,6 @@
 // leetcode.js - The main file that will import and call all the other files.
+// Make objects of their classes then run the method
+
 import RunningSum from './running_sum_of_1d_array_1480.js';
 import RichestCustomerWealth from './richest_customer_wealth_1672.js';
 import FizzBuzz from './fizz_buzz_412.js';  // curly brace for non-default export
@@ -11,8 +13,7 @@ export default class Leetcode {
         const numbers = [1, 2, 3, 4, 5];
         const runningSum = new RunningSum(numbers)
         const result_list1 = runningSum.calculate_running_sum();
-        console.log("result_list1: ", result_list1)
-        console.log('\n')
+        console.log("result_list: ", result_list1)
     }
 
     richestCustomerWealth1672() {

@@ -7,7 +7,6 @@ defmodule LeetcodeElixir.RunningSumOf1DArray1480 do
   Calculates the running sum of a 1D array.
   """
   def calculate_running_sum(numbers) do
-    IO.puts "1480. Running Sum of 1D Array"
     IO.puts "input_list: #{inspect(numbers)}"
 
     result = Enum.reduce(numbers, {[], 0}, fn number, {result, running_sum} ->

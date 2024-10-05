@@ -1,4 +1,4 @@
-class RichestCustomerWealth
+class RichestCustomerWealth1672
     accounts = []
 
     def initialize(accounts)

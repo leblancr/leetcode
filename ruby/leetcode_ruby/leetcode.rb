@@ -1,6 +1,6 @@
 require_relative 'running_sum_of_1D_array_1480'
 require_relative 'richest_customer_wealth_1672'
-require_relative 'fizz_buzz_412'
+require_relative 'fizz_buzz412'
 require_relative 'reduce_a_number_to_zero_1342'
 
 
@@ -17,7 +17,7 @@ def richest_customer_wealth_1672()
     puts "1672. Richest Customer Wealth"
     accounts = [[1, 2, 3], [4, 5, 6], [7, 8, 9]]
     puts "accounts: #{accounts}"
-    highest_balance = RichestCustomerWealth.new(accounts)
+    highest_balance = RichestCustomerWealth1672.new(accounts)
     puts "highest_balance: #{highest_balance.calculate_richest_customer_wealth()}"
     puts
 end
@@ -25,7 +25,7 @@ end
 def fizz_buzz_412()
     puts "412. Fizz Buzz"
     limit = 16  # check up to limit
-    fb = FizzBuzz.new(limit)
+    fb = FizzBuzz412.new(limit)
     output = fb.calculate_fizz_buzz()
     puts "map: " + output.join(', ') + "\n\n"
 end
