@@ -1,14 +1,10 @@
 # lib/LeetCode_elixir.ex
-#Code.require_file("lib/leetcode_elixir/running_sum_of_1d_array1480.ex")
-#Code.require_file("lib/leetcode_elixir/richest_customer_wealth1672.ex")
-#Code.require_file("lib/leetcode_elixir/fizz_buzz412.ex")
-
 defmodule LeetCodeElixir do
   @moduledoc """
   Documentation for `LeetCodeElixir`.
   Do LeetCode problems in Elixir.
   """
-  import Utils
+  import Utils # those functions are here, like puts
 
   # alias the necessary modules
   alias LeetCodeElixir.RunningSumOf1DArray1480
@@ -24,7 +20,7 @@ defmodule LeetCodeElixir do
   def run do
     puts "Running LeetCode problems in Elixir\n"
 
-    # module.function()
+    # pass values into the functions
     puts "1480. Running Sum of 1D Array"
     numbers = [3, 1, 2, 10, 1]
     result = RunningSumOf1DArray1480.calculate_running_sum(numbers)

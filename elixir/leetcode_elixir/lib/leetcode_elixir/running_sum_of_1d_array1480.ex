@@ -1,21 +1,73 @@
 # lib/leetcode_elixer/running_sum_of_1d_array1480.ex
-
 defmodule LeetCodeElixir.RunningSumOf1DArray1480 do
   @moduledoc false
 
+  use GenServer
+  import Utils # those functions are here, like puts
+
+  # Callbacks
+
+  # Starts the GenServer
+  def start_link(numbers) do
+    GenServer.start_link(__MODULE__, numbers, name: __MODULE__)  # calls init/1 with the argument numbers
+  end
+
   @doc """
-  Calculates the running sum of a 1D array.
+  Initializes the state of the GenServer, the variables, lists, or other data structures.
+  Takes a list of numbers and returns a map with two keys:
+  - `:numbers`: the original list of numbers
+  - `:result`: an empty list to store the running sum.
+
+  The state is represented as a map, with `numbers` and `result` as keys.
   """
-  def calculate_running_sum(numbers) do
-    IO.puts "input_list: #{inspect(numbers)}"
+  def init(numbers) do
+    {:ok, %{numbers: numbers, result: []}}  # State holds an empty list for numbers and result
+  end
 
-    result = Enum.reduce(numbers, {[], 0}, fn number, {result, running_sum} ->
-      new_running_sum = running_sum + number
-      {result ++ [new_running_sum], new_running_sum}
-    end)
-             |> elem(0) # Returns the accumulated result
+  def handle_call(:calculate_running_sum, _from, state) do
+    # Print the input list for debugging. `state.numbers` holds the list of numbers.
+    puts "input_list: #{inspect(state.numbers)}"  # It's clear that we're accessing `numbers` from the `state` map
 
-    IO.puts "result_list: #{inspect(result)}"
-    result
+    # The Enum.reduce/3 function is used to accumulate the running sum.
+    # "Reduce" is really "Processing" the List.
+    # Enum.reduce/3 takes three arguments:
+    #    1. state.numbers: The list you are iterating over (the numbers).
+    #    2. {[], 0}: The initial accumulator, which is a tuple.
+    #       The first element [] will hold the list of running sums,
+    #       and the second element 0 represents the initial sum.
+    #       The accumulator (the tuple in this case) is the value that gets passed from one iteration to the next.
+    #    3. The anonymous function: The function that processes each element in the list.
+    #       fn arg1, arg2 ->
+    #         function body
+    #       end
+    #
+    # For each number in numbers, you update the running sum (running_sum + number) and
+    # prepend it to the result list ([new_running_sum | running_sums], new_running_sum).
+    # The | operator is used to prepend an element to the front of a list.
+    # {[new_running_sum | running_sums], new_running_sum}
+    # This is a tuple with two values:
+    #    The first value is a new list where new_running_sum is prepended to running_sums.
+    #    The second value is the updated running_sum, which is the sum of all numbers processed so far.
+    #
+    # Finally, elem(0) is used to get the first element of the tuple, which is the accumulated list of running sums.
+    # This is the result list before reversing it to match the correct order.
+    running_sums = Enum.reduce(state.numbers,
+      {[], 0},
+      fn number, {running_sums, running_sum} ->
+        new_running_sum = running_sum + number  # Update the running sum
+        {[new_running_sum | running_sums], new_running_sum}  # Prepend new sum to the result list
+      end
+    )
+    |> elem(0)  # Get the first element of the tuple (the accumulated result)
+
+    # Reverse the list to get the running sums in the correct order.
+    running_sums = Enum.reverse(running_sums)
+
+    # Print the result list for debugging. This will show the running sums.
+    puts "result_list: #{inspect(running_sums)}"  # Print the result list for debugging
+
+    # Update the state with the result and return the result.
+    # We replace `state.numbers` with the original `state` map and use the `running_sums` as the new result.
+    {:reply, running_sums, %{state | result: running_sums}}
   end
 end
