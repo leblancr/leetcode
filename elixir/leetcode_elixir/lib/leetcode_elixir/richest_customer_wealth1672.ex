@@ -1,17 +1,21 @@
-# lib/leetcode_elixir/richest_customer_wealth1672.ex
-
-defmodule LeetCodeElixir.RichestCustomerWealth1672 do
+defmodule RichestCustomerWealth1672 do
   @moduledoc false
-  import Utils
+  
+  use GenServer
 
-  @doc """
-  Calculates the richest customer's wealth from their accounts.
-  """
-  def calculate_richest_customer_wealth(accounts) do
-    puts "input_list: #{inspect(accounts)}"
-    result = accounts
-      |> Enum.map(&Enum.sum/1)
-      |> Enum.max()
-      puts "result: #{result}"
+  def start_link(state, opts) do
+    GenServer.start_link(__MODULE__, state, opts)
+  end
+
+  def init(_opts) do
+    {:ok, %{}}
+  end
+
+  def handle_call(_msg, _from, state) do
+    {:reply, :ok, state}
+  end
+
+  def handle_cast(_msg, state) do
+    {:noreply, state}
   end
 end
