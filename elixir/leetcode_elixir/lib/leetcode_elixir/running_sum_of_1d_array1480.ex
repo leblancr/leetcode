@@ -15,12 +15,16 @@ defmodule LeetCodeElixir.RunningSumOf1DArray1480 do
   Takes a list of numbers and returns a map with two keys:
   - `:numbers`: the original list of numbers
   - `:result`: an empty list to store the running sum.
-
-  The state is represented as a map, with `numbers` and `result` as keys.
+  - `:status`: the current status of the GenServer (e.g., :calculating, :done)
   """
   def init(numbers) do
     puts("Initializing #{__MODULE__} GenServer with numbers: #{inspect(numbers)}")
-    {:ok, %{numbers: numbers, result: []}}  # State holds an empty list for numbers and result
+    {:ok, %{numbers: numbers, result: [], status: :calculating}}  # Add :status key to track the current state
+  end
+
+  def handle_call(:get_status, _from, state) do
+    # Always return the current status and the result
+    {:reply, %{status: state.status, result: state.result}, state}
   end
 
   @doc """
@@ -48,6 +52,8 @@ defmodule LeetCodeElixir.RunningSumOf1DArray1480 do
   """
   def handle_cast(:calculate_running_sum, state) do
     puts("Calculating running sum...")
+
+    # Calculate the running sum
     running_sums = Enum.reduce(state.numbers,
                      {[], 0},
                      fn number, {running_sums, running_sum} ->
@@ -59,19 +65,9 @@ defmodule LeetCodeElixir.RunningSumOf1DArray1480 do
 
     # Reverse the list to get the running sums in the correct order.
     running_sums = Enum.reverse(running_sums)
-    puts("Running sum calculated: #{inspect(running_sums)}")
+    #puts("Running sum calculated: #{inspect(running_sums)}")
 
-    # Notify the StatusTracker that this GenServer is done
-    GenServer.cast(LeetCodeElixir.StatusTracker, {:gen_server_done, __MODULE__})
-
-    # Update the state with the result and return the result.
-    # We replace `state.numbers` with the original `state` map and use the `running_sums` as the new result.
-    {:reply, running_sums, %{state | result: running_sums}}
-  end
-
-  # Handle messages sent with Process.send_after
-  def handle_info(:get_state, state) do
-    IO.inspect(state, label: "Current State")
-    {:noreply, state}
+    # Update the state with the result and change status to :done
+    {:noreply, %{state | result: running_sums, status: :done}}
   end
 end
