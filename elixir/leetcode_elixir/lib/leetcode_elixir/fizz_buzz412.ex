@@ -25,7 +25,13 @@ defmodule LeetCodeElixir.FizzBuzz412 do
 
   def init(limit) do
     puts("Initializing #{__MODULE__} GenServer with limit: #{limit}")
-    {:ok, %{limit: limit, output: []}}
+    {:ok, %{limit: limit, output: [], status: :calculating}}
+  end
+
+  def handle_call(:get_status, _from, state) do
+    # Always return the current status and the result keys
+    # Values are state variables from init/1
+    {:reply, %{status: state.status, result: state.output}, state}
   end
 
   def handle_cast(:calculate_fizz_buzz, state) do
@@ -38,15 +44,7 @@ defmodule LeetCodeElixir.FizzBuzz412 do
       n -> n
     end)
 
-    # Notify the StatusTracker that this GenServer is done
-    GenServer.cast(LeetCodeElixir.StatusTracker, {:gen_server_done, __MODULE__})
-
-    {:reply, output, state}
-  end
-
-  # Handle messages sent with Process.send_after
-  def handle_info(:get_state, state) do
-    IO.inspect(state, label: "Current State")
-    {:noreply, state}
+    # Update the state with the result and change status to :done
+    {:noreply, %{state | output: output, status: :done}}
   end
 end

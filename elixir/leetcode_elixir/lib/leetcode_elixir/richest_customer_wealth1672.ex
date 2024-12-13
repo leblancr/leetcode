@@ -24,7 +24,8 @@ defmodule LeetCodeElixir.RichestCustomerWealth1672 do
   end
 
   def handle_call(:get_status, _from, state) do
-    # Always return the current status and the result
+    # Always return the current status and the result keys
+    # Values are state variables from init/1
     {:reply, %{status: state.status, result: state.result}, state}
   end
 

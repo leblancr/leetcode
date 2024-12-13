@@ -1,74 +1,94 @@
 defmodule LeetCodeElixir.Application do
   use Application
-  import Utils # those functions are here, like puts
+  import Utils # Assuming this module exists
+
+  alias LeetCodeElixir.RunningSumOf1DArray1480
+#  alias LeetCodeElixir.RichestCustomerWealth1672
+#  alias LeetCodeElixir.FizzBuzz412
+#  alias LeetCodeElixir.NumberOfStepsToReduceANumberToZero1342
+#  alias LeetCodeElixir.StatusPoller
 
   def start(_type, _args) do
-    numbers = [3, 1, 2, 10, 1]
-    accounts = [[1, 2, 3], [3, 2, 1], [4, 5, 6]]
-    limit = 16
-    number = 16
-
-    children = [
-      {LeetCodeElixir.RunningSumOf1DArray1480, numbers},
-      {LeetCodeElixir.RichestCustomerWealth1672, accounts},
-#      {LeetCodeElixir.FizzBuzz412, limit},
-#      {LeetCodeElixir.NumberOfStepsToReduceANumberToZero1342, number}
+    data = [
+      %{module: RunningSumOf1DArray1480, args: [3, 1, 2, 10, 1], message: :calculate_running_sum},
+#      %{module: RichestCustomerWealth1672, args: [[1, 2, 3], [3, 2, 1], [4, 5, 6]], message: :calculate_richest_customer_wealth},
+#      %{module: FizzBuzz412, args: 16, message: :calculate_fizz_buzz},
+#      %{module: NumberOfStepsToReduceANumberToZero1342, args: 16, message: :number_of_steps},
+#      %{module: StatusPoller, args: nil, message: :status_poller}
     ]
 
-    modules_and_messages = [
-      {LeetCodeElixir.RunningSumOf1DArray1480, :calculate_running_sum},
-      {LeetCodeElixir.RichestCustomerWealth1672, :calculate_richest_customer_wealth},
-#      {LeetCodeElixir.FizzBuzz412, :calculate_fizz_buzz},
-#      {LeetCodeElixir.NumberOfStepsToReduceANumberToZero1342, :number_of_steps}
-    ]
+#    children = Enum.map(data, fn %{module: module, args: args} ->
+#      {module, args}
+#    end)
 
-    puts("Starting the GenServers...")
+    # id: module: This specifies a unique identifier for each child.
+    # It's used by the supervisor to track the child processes.
+    # :start_link: This is the function we want to call to start the agent.
+    children = Enum.map(data, fn %{module: module, args: args} ->
+      %{
+        id: module, # Unique identifier for the child
+        start: {Agent, :start_link, [fn -> %{numbers: args, result: [], status: :pending} end,
+          [name: module]]} # options
+      }
+    end)
+
+    inspect(children, label: "Children specs") # Log to inspect the child specs
+    puts(inspect(children))
+
+    modules_and_messages = Enum.map(data, fn %{module: module, message: message} -> {module, message} end)
+
+    puts("Starting the Agents...")
     {:ok, pid} = Supervisor.start_link(children, strategy: :one_for_one)
-
-    # Ensure all are running
-    puts("\nSupervisor started with PID: #{inspect(pid)}")
-    Enum.each(children, fn {module, _args} ->
-      puts("GenServer for #{inspect(module)} started with pid: #{inspect(Process.whereis(module))}")
+    inspect(pid, label: "Supervisor PID") # Log the supervisor PID
+    Enum.each(data, fn %{module: module, args: args} ->
+      puts("Checking state of agent #{inspect(module)}...")
+      inspect(Agent.get(module, fn state -> state end))
     end)
 
     # Start the work for each GenServer
-    start_genserver_work(modules_and_messages)
+    start_agent_work(modules_and_messages)
 
-    # Track GenServer status directly in Application (no need for StatusTracker)
-    track_genservers_status(modules_and_messages)
+    # No need to explicitly call poll_status here
+    # puts("Status polling started automatically...")
 
     {:ok, pid}
   end
 
-  defp start_genserver_work(modules_and_messages) do
+  defp start_agent_work(modules_and_messages) do
     puts("\nStarting the work...")
 
-    Enum.each(modules_and_messages, fn {module, msg} ->
-      puts("Sending message :#{msg} to #{inspect(module)}")
-      GenServer.cast(module, msg)
-    end)
-  end
-
-  defp track_genservers_status(modules_and_messages) do
-    puts("Polling every second...")
-
-    # Start polling each GenServer's status every second
-    schedule_state_check(modules_and_messages)
-  end
-
-  defp schedule_state_check(modules_and_messages) do
     Enum.each(modules_and_messages, fn {module, _msg} ->
-      case GenServer.call(module, :get_status) do
-        %{status: :done, result: result} ->
-          puts("Status of #{inspect(module)}: done")
-          puts("Result of #{inspect(module)}: #{inspect(result)}")
+      puts("Updating agent state to calculate running sum for #{inspect(module)}")
 
-        %{status: :calculating} ->
-          puts("Status of #{inspect(module)}: still calculating")
-      end
+      # Directly update the agent's state
+      Agent.update(module, fn state ->
+        puts("Inside Agent.update, current state: #{inspect(state)}")
+
+        # Calculate the running sum
+        running_sums =
+          Enum.reduce(state.numbers, {[], 0}, fn number, {sums, acc} ->
+            new_acc = acc + number
+            {[new_acc | sums], new_acc}
+          end)
+          |> elem(0)  # Get the first element of the tuple (the accumulated result)
+
+        # Reverse the list to get the running sums in the correct order
+        running_sums = Enum.reverse(running_sums)
+
+        # Return the updated state
+        updated_state = %{state | result: running_sums, status: :done}
+        IO.puts("Updated state: #{inspect(updated_state)}")
+        updated_state
+      end)
     end)
-
-    # Re-schedule after 1 second, regardless of status
-    Process.send_after(self(), :check_responses, 1000)
   end
+
+#  defp start_genserver_work(modules_and_messages) do
+#    puts("\nStarting the work...")
+#
+#    Enum.each(modules_and_messages, fn {module, msg} ->
+#      puts("Sending message :#{msg} to #{inspect(module)}")
+#      GenServer.cast(module, msg)
+#    end)
+#  end
 end
