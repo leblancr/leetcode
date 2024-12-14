@@ -18,33 +18,36 @@ defmodule LeetCodeElixir.FizzBuzz412 do
   use GenServer
   import Utils # those functions are here, like puts
 
-  def start_link(limit) do
-    puts("StartLink #{__MODULE__} GenServer")
-    GenServer.start_link(__MODULE__, limit, name: __MODULE__)
+  # Starts the Agent, creates state variables with initial default values
+  # start_link(args) args = args from application
+  # Supervisor calls this function with args where args is
+  def start_link(args) do
+    puts("StartLink for #{__MODULE__} with name #{inspect(__MODULE__)}")
+    Agent.start_link(fn -> %{args: args, result: [], status: :calculating} end, name: __MODULE__)
   end
 
-  def init(limit) do
-    puts("Initializing #{__MODULE__} GenServer with limit: #{limit}")
-    {:ok, %{limit: limit, output: [], status: :calculating}}
-  end
-
-  def handle_call(:get_status, _from, state) do
-    # Always return the current status and the result keys
-    # Values are state variables from init/1
-    {:reply, %{status: state.status, result: state.output}, state}
-  end
-
-  def handle_cast(:calculate_fizz_buzz, state) do
+  @doc """
+  Take the state.args, do something with it, update state variables at the end.
+  """
+  def calculate() do
     puts("Calculating fizz buzz...")
-    output = 1..state.limit
-             |> Enum.map(fn
-      n when rem(n, 15) == 0 -> "FizzBuzz"
-      n when rem(n, 5) == 0 -> "Buzz"
-      n when rem(n, 3) == 0 -> "Fizz"
-      n -> n
-    end)
 
-    # Update the state with the result and change status to :done
-    {:noreply, %{state | output: output, status: :done}}
+    Agent.update(__MODULE__, fn state ->
+      output = 1..state.args
+      |> Enum.map(fn
+        n when rem(n, 15) == 0 -> "FizzBuzz"
+        n when rem(n, 5) == 0 -> "Buzz"
+        n when rem(n, 3) == 0 -> "Fizz"
+        n -> n
+      end)
+
+      # Update the state with the result and change status to :done
+      %{state | result: output, status: :done}
+    end)
+  end
+
+  # Function to fetch the current status and result
+  def get_status do
+    Agent.get(__MODULE__, fn state -> %{status: state.status, result: state.result} end)
   end
 end
