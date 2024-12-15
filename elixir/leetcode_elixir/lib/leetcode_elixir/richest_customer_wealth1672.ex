@@ -1,14 +1,13 @@
 defmodule LeetCodeElixir.RichestCustomerWealth1672 do
   @moduledoc false
-  
-  use GenServer
+
   import Utils # those functions are here, like puts
 
   # Starts the Agent, creates state variables with initial default values
   # start_link(args) args = args from application
   # Supervisor calls this function with args where args is
   def start_link(args) do
-    puts("StartLink for #{__MODULE__} with name #{inspect(__MODULE__)}")
+    puts("Starting Agent for #{__MODULE__} with name #{inspect(__MODULE__)}")
     Agent.start_link(fn -> %{args: args, result: [], status: :calculating} end, name: __MODULE__)
   end
 
