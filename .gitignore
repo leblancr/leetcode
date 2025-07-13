@@ -1,2 +1,3 @@
  groovy/leetcode_groovy/
 *.pyc
+.idea

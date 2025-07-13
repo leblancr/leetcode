@@ -2,6 +2,33 @@ import leetcode
 
 print("Running leetcode problems")
 
+import argparse
+import leetcode
+import os
+
+
+def main():
+    parser = argparse.ArgumentParser(
+        description="Run a selected LeetCode problem function"
+    )
+    parser.add_argument(
+        "problem",  # variable to hold arg
+        help="Name of the LeetCode function to run (e.g., fizz_buzz_412)"
+    )
+    args = parser.parse_args()
+    #print(args.problem)  # the number of the leetcode problem
+
+    # Find script ending with that number
+    with os.scandir('.') as entries:
+        for entry in entries:
+            if entry.is_file() and os.path.splitext(entry)[0].endswith('679'):
+                print(entry.name)
+                print(os.path.splitext(entry)[0])
+                print(os.path.splitext(entry.name)[0])
+                getattr(leetcode, os.path.splitext(entry.name)[0])()
+                break
+        else:
+            print(f"No file name found ending with {args.problem}.")
 # easy
 # leetcode.find_the_highest_altitude_1732()
 # leetcode.fizz_buzz_412()
@@ -28,3 +55,5 @@ print("Running leetcode problems")
 # leetcode.max_number_of_k_sum_pairs_679()
 
 
+if __name__ == "__main__":
+    main()

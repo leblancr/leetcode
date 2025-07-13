@@ -28,7 +28,8 @@ class MaxPairs:
 
     def max_number_of_k_sum_pairs(self) -> int:
         operations = 0
-        # for each data_dict unpack k, nums
+
+        # For each data_dict unpack k, nums
         for data_dict in self.input_data:
             print(data_dict)
             # for each k, nums find max k-sum pairs
