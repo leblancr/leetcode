@@ -19,7 +19,7 @@ def container_with_most_water_11():
 
     for number_list in number_lists:
         print(f"input: {number_list}")
-        mw = ContainerWithMostWater(number_list)
+        mw = ContainerWithMostWater(number_list)  # make object
         print(f"output: {mw.container_with_most_water()}\n")
 
 

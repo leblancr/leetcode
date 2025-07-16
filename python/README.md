@@ -103,4 +103,4 @@ Find venv path
 
 To run the script:
  cd leetcode_python
- python main.py
+ poetry run python main.py
